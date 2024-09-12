@@ -9,8 +9,13 @@
 
     * Shows repeatable sets and their children with "[]"
     * Groups elements in their pages.
-    * In key/value format where key is the (technical) element name and the value is the (user facing) element label. E.g. 
-        "ExpectedInspectionDate": "Expected inspection date",
+    * In ElementAsKeyPair format where key is the (technical) element name and the value is the type in brackets [] followed by the (user facing) element label. E.g. 
+        "ExpectedInspectionDate": "[date] Expected inspection date",
+    * In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
+        "ExpectedInspectionDate": {
+          "label": "Expected inspection date",
+          "type": "date"
+        },
 
   Usage:
     * Download OneBlink Form file definition:
@@ -21,46 +26,65 @@
         + Click on that line > Right hand pane > Response Tab; or
         + Right click on that line > Copy Value > Copy Response
     * Copy response to file E.g. ./formDefinitions/RecordOfMovementDefinition.json
-    * In this code 
+    * In this code goto config section:
       - Update import formDefinition
       - Set const outputToFile
+      - Set outputFormat
     * Execute 
 
       npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
 
 **/
 
+
+/*********** Config ****************************************************************/
 import formDefinition from './formDefinitions/RecordOfMovementDefinition.json';
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
 
+// Define the enum for output format
+enum OutputFormat {
+  ElementAsKeyPair,
+  ElementWithChildObject,
+}
+
+// Set the desired output format here
+const outputFormat: OutputFormat = OutputFormat.ElementAsKeyPair;
+/*************************************************************************************/
+
 import fs from 'fs';
 import path from 'path';
-import moment from 'moment';
+// import moment from 'moment';
 
-function extractElements(elements, prefix = '') {
-  const result = {};
+function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
+  const result: { [key: string]: any } = {};
 
   for (const element of elements) {
-    // An element type 'html' is an info element
+    // Exclude elements with '__' prefix, info elements (type 'html'), and heading elements
     if (element.name 
         && !element.name.startsWith('__') 
         && element.type !== 'html'
         && element.type !== 'heading'
       ) {
-      if (element.type === 'repeatableSet') {
-        result[`${prefix}${element.name}[]`] = element.label;
-        // Process child elements with prefix
-        if (element.elements) {
-          result[`${prefix}${element.name}[]`] = extractElements(element.elements, `${prefix}${element.name}[]` + '.');
-        }
-      } else {
-        result[`${prefix}${element.name}`] = element.label;
+      const key = `${prefix}${element.name}${element.type === 'repeatableSet' ? '[]' : ''}`;
+
+      if (outputFormat === OutputFormat.ElementAsKeyPair) {
+        result[key] = `[${element.type}] ${element.label}`;
+      } else if (outputFormat === OutputFormat.ElementWithChildObject) {
+        result[key] = {
+          label: element.label,
+          type: element.type,
+        };
+      }
+
+      // Process child elements for repeatable sets
+      if (element.type === 'repeatableSet' && element.elements) {
+        result[key] = extractElements(element.elements, `${key}.`);
       }
     }
 
-    // Recursively process nested elements
+    // Recursively process nested elements (like pages)
     if (element.elements) {
       const nestedElements = extractElements(element.elements, prefix);
       if (Object.keys(nestedElements).length > 0) {
@@ -76,7 +100,6 @@ function extractElements(elements, prefix = '') {
   return result;
 }
 
-
 function toPascalCase(input: string): string {
   return input
     .split(/\s+/)                     // Split the string by whitespace
@@ -85,13 +108,14 @@ function toPascalCase(input: string): string {
 }
 
 function getOutputFileName() {
-  const formattedName = toPascalCase(formDefinition.name)
+  const formattedName = toPascalCase(formDefinition.name);
+  const formatSuffix = outputFormat === OutputFormat.ElementAsKeyPair ? 'ElementAsKeyPair' : 'ElementWithChildObject';
   // const datetime = moment().format('YYYYMMDD-HHmm');
   // return `${formattedName}-${datetime}.json`;
-  return `${formattedName}-ElementsOfInterest.json`;
+  return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
 }
 
-function writeToFile(processedData) {
+function writeToFile(processedData: { [key: string]: any }) {
   const filePath = path.join(__dirname, 'out', getOutputFileName());
   fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
   console.log(`File saved to ${filePath}`);
@@ -100,7 +124,7 @@ function writeToFile(processedData) {
 const processedData = extractElements(formDefinition.elements);
 
 if (outputToFile) {
-  writeToFile(processedData)
+  writeToFile(processedData);
 } else {
   console.log(JSON.stringify(processedData, null, 2));
 }
