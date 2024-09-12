@@ -1,0 +1,1087 @@
+{
+  "type": "object",
+  "properties": {
+    "trackingCode": {
+      "type": "string",
+      "title": "Digital reference code",
+      "description": "trackingCode"
+    },
+    "env": {
+      "type": "string",
+      "title": "env",
+      "description": "env",
+      "default": "ENV"
+    },
+    "__linkToRestart": {
+      "type": "boolean",
+      "title": "__linkToRestart",
+      "description": "__linkToRestart"
+    },
+    "IsInspectorFillingRom": {
+      "type": "string",
+      "title": "Are you a biosecurity certifier filling this record of movement form out on behalf of the person responsible?",
+      "description": "IsInspectorFillingRom",
+      "default": "2d53a111-22ff-486c-84c9-1a9144639108"
+    },
+    "BiosecurityCertifierCode": {
+      "type": "string",
+      "title": "Biosecurity certifier code",
+      "description": "BiosecurityCertifierCode"
+    },
+    "InspectorFillingRom": {
+      "type": "string",
+      "title": "Biosecurity certifier filling record of movement",
+      "description": "InspectorFillingRom"
+    },
+    "PersonResponsibleFirstName": {
+      "type": "string",
+      "title": "First name",
+      "description": "PersonResponsibleFirstName"
+    },
+    "PersonResponsibleLastName": {
+      "type": "string",
+      "title": "Last name",
+      "description": "PersonResponsibleLastName"
+    },
+    "PersonResponsibleEmail": {
+      "type": "string",
+      "title": "Email",
+      "description": "PersonResponsibleEmail"
+    },
+    "PersonResponsibleCanAccessEmailOnTheRoad": {
+      "type": "string",
+      "title": "Can you readily access your email from a mobile device, while on the road?",
+      "description": "PersonResponsibleCanAccessEmailOnTheRoad"
+    },
+    "PersonResponsibleMobilePhone": {
+      "type": "string",
+      "title": "Mobile phone",
+      "description": "PersonResponsibleMobilePhone"
+    },
+    "PersonResponsibleAlternatePhone": {
+      "type": "string",
+      "title": "Alternate phone",
+      "description": "PersonResponsibleAlternatePhone"
+    },
+    "InspectionFacilityIntended": {
+      "type": "string",
+      "title": "Inspection facility intended",
+      "description": "InspectionFacilityIntended"
+    },
+    "ExpectedInspectionDate": {
+      "type": "string",
+      "format": "date",
+      "title": "Expected inspection date",
+      "description": "ExpectedInspectionDate"
+    },
+    "Owner": {
+      "type": "string",
+      "title": "Owner",
+      "description": "Owner"
+    },
+    "OwnerFirstName": {
+      "type": "string",
+      "title": "First name",
+      "description": "OwnerFirstName"
+    },
+    "OwnerLastName": {
+      "type": "string",
+      "title": "Last name",
+      "description": "OwnerLastName"
+    },
+    "OwnerEmail": {
+      "type": "string",
+      "title": "Email",
+      "description": "OwnerEmail"
+    },
+    "OwnerPhone": {
+      "type": "string",
+      "title": "Phone",
+      "description": "OwnerPhone"
+    },
+    "Carriers": {
+      "type": "array",
+      "title": "Carriers",
+      "description": "Carriers[]",
+      "items": {
+        "type": "object",
+        "title": "Carriers (Entry)",
+        "properties": {
+          "CarrierType": {
+            "type": "string",
+            "title": "Carrier type",
+            "description": "Carriers[].CarrierType"
+          },
+          "CarrierMake": {
+            "type": "string",
+            "title": "Make",
+            "description": "Carriers[].CarrierMake"
+          },
+          "CarrierModel": {
+            "type": "string",
+            "title": "Model",
+            "description": "Carriers[].CarrierModel"
+          },
+          "CarrierSerialNumber": {
+            "type": "string",
+            "title": "Serial number",
+            "description": "Carriers[].CarrierSerialNumber"
+          },
+          "CarrierRegistrationNumber": {
+            "type": "string",
+            "title": "Registration number",
+            "description": "Carriers[].CarrierRegistrationNumber"
+          }
+        },
+        "required": []
+      }
+    },
+    "OriginAddressNswPoint": {
+      "type": "object",
+      "title": "Address",
+      "description": "OriginAddressNswPoint",
+      "properties": {
+        "dataset": {
+          "type": "string"
+        },
+        "geo": {
+          "type": "object",
+          "title": "Geo",
+          "properties": {
+            "geoDatumCode": {
+              "type": "string"
+            },
+            "geoFeature": {
+              "type": "string"
+            },
+            "geometry": {
+              "type": "object",
+              "properties": {
+                "coordinates": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "addressDetails": {
+          "type": "object",
+          "title": " : Address Details",
+          "description": "OriginAddressNswPoint.addressDetails",
+          "properties": {
+            "cadastralIdentifier": {
+              "type": "string"
+            },
+            "formattedAddress": {
+              "type": "string",
+              "title": " : Formatted Address",
+              "description": "OriginAddressNswPoint.addressDetails.formattedAddress"
+            },
+            "localityName": {
+              "type": "string"
+            },
+            "postcode": {
+              "type": "string"
+            },
+            "stateTerritory": {
+              "type": "string"
+            },
+            "streetName": {
+              "type": "string"
+            },
+            "streetNumber1": {
+              "type": "string"
+            },
+            "streetNumber2": {
+              "type": "string"
+            },
+            "streetType": {
+              "type": "string"
+            },
+            "streetTypeDescription": {
+              "type": "string"
+            },
+            "lotIdentifier": {
+              "type": "string"
+            },
+            "localityNeighbours": {
+              "type": "string"
+            },
+            "gnafLocalityPid": {
+              "type": "string"
+            },
+            "gnafStreetLocalityPid": {
+              "type": "string"
+            },
+            "aliasPrincipal": {
+              "type": "string"
+            },
+            "deliveryPointIdentifier": {
+              "type": "string"
+            }
+          }
+        },
+        "addressId": {
+          "type": "string"
+        },
+        "addressRecordType": {
+          "type": "string"
+        },
+        "asgsMain": {
+          "type": "object",
+          "title": " : ASGS Main",
+          "description": "OriginAddressNswPoint.asgsMain",
+          "properties": {
+            "2011": {
+              "type": "object",
+              "properties": {
+                "mbId": {
+                  "type": "string"
+                },
+                "sa1Id": {
+                  "type": "string"
+                },
+                "sa2Id": {
+                  "type": "string"
+                },
+                "sa2Name": {
+                  "type": "string"
+                },
+                "sa3Id": {
+                  "type": "string"
+                },
+                "sa3Name": {
+                  "type": "string"
+                },
+                "sa4Id": {
+                  "type": "string"
+                },
+                "sa4Name": {
+                  "type": "string"
+                }
+              }
+            },
+            "2016": {
+              "type": "object",
+              "properties": {
+                "mbId": {
+                  "type": "string"
+                },
+                "sa1Id": {
+                  "type": "string"
+                },
+                "sa2Id": {
+                  "type": "string"
+                },
+                "sa2Name": {
+                  "type": "string"
+                },
+                "sa3Id": {
+                  "type": "string"
+                },
+                "sa3Name": {
+                  "type": "string"
+                },
+                "sa4Id": {
+                  "type": "string"
+                },
+                "sa4Name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "commonwealthElectorate": {
+          "type": "object",
+          "title": " : Commonwealth Electorate",
+          "description": "OriginAddressNswPoint.commonwealthElectorate",
+          "properties": {
+            "commElectoralName": {
+              "type": "string"
+            },
+            "commElectoralPid": {
+              "type": "string"
+            }
+          }
+        },
+        "localGovernmentArea": {
+          "type": "object",
+          "title": " : Local Government Area",
+          "description": "OriginAddressNswPoint.localGovernmentArea",
+          "properties": {
+            "lgaName": {
+              "type": "string"
+            },
+            "lgaPid": {
+              "type": "string"
+            },
+            "lgaShortName": {
+              "type": "string"
+            }
+          }
+        },
+        "stateElectorate": {
+          "type": "array",
+          "title": " : State Electorate",
+          "description": "OriginAddressNswPoint.stateElectorate",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stateElectoralName": {
+                "type": "string"
+              },
+              "stateElectoralType": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "cadastralParcels": {
+          "type": "array",
+          "title": " : Cadastral Parcels",
+          "description": "OriginAddressNswPoint.cadastralParcels",
+          "items": {
+            "type": "object",
+            "properties": {
+              "propId": {
+                "type": "string"
+              },
+              "parcelId": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "addressId",
+        "addressRecordType"
+      ]
+    },
+    "OriginCannotFindAddressBySearch": {
+      "type": "boolean",
+      "title": "I cannot find my address by search",
+      "description": "OriginCannotFindAddressBySearch"
+    },
+    "OriginManualStreetAddress": {
+      "type": "string",
+      "title": "Street address",
+      "description": "OriginManualStreetAddress"
+    },
+    "OriginManualSuburb": {
+      "type": "string",
+      "title": "Suburb",
+      "description": "OriginManualSuburb"
+    },
+    "OriginManualState": {
+      "type": "string",
+      "title": "State",
+      "description": "OriginManualState",
+      "default": "7fc476a4-4ded-4d51-b280-3f608acac03d"
+    },
+    "OriginManualPostcode": {
+      "type": "number",
+      "title": "Postcode",
+      "description": "OriginManualPostcode"
+    },
+    "AreDestinationsKnown": {
+      "type": "string",
+      "title": "Do you know the destinations in NSW where the carriers will next work?",
+      "description": "AreDestinationsKnown"
+    },
+    "Destinations": {
+      "type": "array",
+      "title": "Destinations",
+      "description": "Destinations[]",
+      "items": {
+        "type": "object",
+        "title": "Destinations (Entry)",
+        "properties": {
+          "DestinationAddressNswPoint": {
+            "type": "object",
+            "title": "Address",
+            "description": "Destinations[].DestinationAddressNswPoint",
+            "properties": {
+              "dataset": {
+                "type": "string"
+              },
+              "geo": {
+                "type": "object",
+                "title": "Geo",
+                "properties": {
+                  "geoDatumCode": {
+                    "type": "string"
+                  },
+                  "geoFeature": {
+                    "type": "string"
+                  },
+                  "geometry": {
+                    "type": "object",
+                    "properties": {
+                      "coordinates": {
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "addressDetails": {
+                "type": "object",
+                "title": " : Address Details",
+                "description": "Destinations[].DestinationAddressNswPoint.addressDetails",
+                "properties": {
+                  "cadastralIdentifier": {
+                    "type": "string"
+                  },
+                  "formattedAddress": {
+                    "type": "string",
+                    "title": " : Formatted Address",
+                    "description": "Destinations[].DestinationAddressNswPoint.addressDetails.formattedAddress"
+                  },
+                  "localityName": {
+                    "type": "string"
+                  },
+                  "postcode": {
+                    "type": "string"
+                  },
+                  "stateTerritory": {
+                    "type": "string"
+                  },
+                  "streetName": {
+                    "type": "string"
+                  },
+                  "streetNumber1": {
+                    "type": "string"
+                  },
+                  "streetNumber2": {
+                    "type": "string"
+                  },
+                  "streetType": {
+                    "type": "string"
+                  },
+                  "streetTypeDescription": {
+                    "type": "string"
+                  },
+                  "lotIdentifier": {
+                    "type": "string"
+                  },
+                  "localityNeighbours": {
+                    "type": "string"
+                  },
+                  "gnafLocalityPid": {
+                    "type": "string"
+                  },
+                  "gnafStreetLocalityPid": {
+                    "type": "string"
+                  },
+                  "aliasPrincipal": {
+                    "type": "string"
+                  },
+                  "deliveryPointIdentifier": {
+                    "type": "string"
+                  }
+                }
+              },
+              "addressId": {
+                "type": "string"
+              },
+              "addressRecordType": {
+                "type": "string"
+              },
+              "asgsMain": {
+                "type": "object",
+                "title": " : ASGS Main",
+                "description": "Destinations[].DestinationAddressNswPoint.asgsMain",
+                "properties": {
+                  "2011": {
+                    "type": "object",
+                    "properties": {
+                      "mbId": {
+                        "type": "string"
+                      },
+                      "sa1Id": {
+                        "type": "string"
+                      },
+                      "sa2Id": {
+                        "type": "string"
+                      },
+                      "sa2Name": {
+                        "type": "string"
+                      },
+                      "sa3Id": {
+                        "type": "string"
+                      },
+                      "sa3Name": {
+                        "type": "string"
+                      },
+                      "sa4Id": {
+                        "type": "string"
+                      },
+                      "sa4Name": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "2016": {
+                    "type": "object",
+                    "properties": {
+                      "mbId": {
+                        "type": "string"
+                      },
+                      "sa1Id": {
+                        "type": "string"
+                      },
+                      "sa2Id": {
+                        "type": "string"
+                      },
+                      "sa2Name": {
+                        "type": "string"
+                      },
+                      "sa3Id": {
+                        "type": "string"
+                      },
+                      "sa3Name": {
+                        "type": "string"
+                      },
+                      "sa4Id": {
+                        "type": "string"
+                      },
+                      "sa4Name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "commonwealthElectorate": {
+                "type": "object",
+                "title": " : Commonwealth Electorate",
+                "description": "Destinations[].DestinationAddressNswPoint.commonwealthElectorate",
+                "properties": {
+                  "commElectoralName": {
+                    "type": "string"
+                  },
+                  "commElectoralPid": {
+                    "type": "string"
+                  }
+                }
+              },
+              "localGovernmentArea": {
+                "type": "object",
+                "title": " : Local Government Area",
+                "description": "Destinations[].DestinationAddressNswPoint.localGovernmentArea",
+                "properties": {
+                  "lgaName": {
+                    "type": "string"
+                  },
+                  "lgaPid": {
+                    "type": "string"
+                  },
+                  "lgaShortName": {
+                    "type": "string"
+                  }
+                }
+              },
+              "stateElectorate": {
+                "type": "array",
+                "title": " : State Electorate",
+                "description": "Destinations[].DestinationAddressNswPoint.stateElectorate",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "stateElectoralName": {
+                      "type": "string"
+                    },
+                    "stateElectoralType": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "cadastralParcels": {
+                "type": "array",
+                "title": " : Cadastral Parcels",
+                "description": "Destinations[].DestinationAddressNswPoint.cadastralParcels",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "propId": {
+                      "type": "string"
+                    },
+                    "parcelId": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "addressId",
+              "addressRecordType"
+            ]
+          },
+          "DestinationCannotFindAddressBySearch": {
+            "type": "boolean",
+            "title": "I cannot find my address by search",
+            "description": "Destinations[].DestinationCannotFindAddressBySearch"
+          },
+          "DestinationManualStreetAddress": {
+            "type": "string",
+            "title": "Street address",
+            "description": "Destinations[].DestinationManualStreetAddress"
+          },
+          "DestinationManualSuburb": {
+            "type": "string",
+            "title": "Suburb",
+            "description": "Destinations[].DestinationManualSuburb"
+          },
+          "DestinationManualState": {
+            "type": "string",
+            "title": "State",
+            "description": "Destinations[].DestinationManualState",
+            "default": "37cd6ce6-d79f-4c1b-9b26-8018e1b2c9b3"
+          },
+          "DestinationManualPostcode": {
+            "type": "number",
+            "title": "Postcode",
+            "description": "Destinations[].DestinationManualPostcode"
+          },
+          "ExpectedDestinationArrivalDate": {
+            "type": "string",
+            "format": "date",
+            "title": "Expected destination arrival date",
+            "description": "Destinations[].ExpectedDestinationArrivalDate"
+          }
+        },
+        "required": []
+      }
+    },
+    "RomUserNotes": {
+      "type": "string",
+      "title": "Notes",
+      "description": "RomUserNotes"
+    },
+    "IDeclareThat": {
+      "type": "array",
+      "title": "I declare that",
+      "description": "IDeclareThat[]",
+      "items": {
+        "type": "string",
+        "title": "I declare that (Option)",
+        "description": "IDeclareThat[].option"
+      }
+    },
+    "PaymentRoute": {
+      "type": "string",
+      "title": "Payment route",
+      "description": "PaymentRoute"
+    },
+    "PaymentRouteReason": {
+      "type": "string",
+      "title": "Payment route reason",
+      "description": "PaymentRouteReason"
+    },
+    "PaymentRouteReasonOther": {
+      "type": "string",
+      "title": "Payment route reason - other",
+      "description": "PaymentRouteReasonOther"
+    },
+    "TaxInvoiceTo": {
+      "type": "string",
+      "title": "Tax invoice to",
+      "description": "TaxInvoiceTo"
+    },
+    "PersonResponsibleAbn": {
+      "required": [],
+      "type": "object",
+      "title": "Person responsible ABN",
+      "description": "PersonResponsibleAbn",
+      "properties": {
+        "recordLastUpdatedDate": {
+          "type": "string",
+          "title": " : Last Updated Date",
+          "description": "PersonResponsibleAbn.recordLastUpdatedDate"
+        },
+        "ABN": {
+          "type": "object",
+          "title": " : ABN",
+          "description": "PersonResponsibleAbn.ABN",
+          "properties": {
+            "identifierValue": {
+              "type": "string",
+              "title": " : Identifier Value",
+              "description": "PersonResponsibleAbn.ABN.identifierValue"
+            },
+            "isCurrentIndicator": {
+              "type": "string",
+              "title": " : Is Current Indicator",
+              "description": "PersonResponsibleAbn.ABN.isCurrentIndicator"
+            },
+            "replacedFrom": {
+              "type": "string",
+              "title": " : Replaced From",
+              "description": "PersonResponsibleAbn.ABN.replacedFrom"
+            }
+          }
+        },
+        "entityStatus": {
+          "type": "object",
+          "title": " : Entity Status",
+          "description": "PersonResponsibleAbn.entityStatus",
+          "properties": {
+            "entityStatusCode": {
+              "type": "string",
+              "title": " : Code",
+              "description": "PersonResponsibleAbn.entityStatus.entityStatusCode"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "PersonResponsibleAbn.entityStatus.effectiveFrom"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "PersonResponsibleAbn.entityStatus.effectiveTo"
+            }
+          }
+        },
+        "ASICNumber": {
+          "type": "string",
+          "title": " : ASIC Number",
+          "description": "PersonResponsibleAbn.ASICNumber"
+        },
+        "entityType": {
+          "type": "object",
+          "title": " : Entity Type",
+          "description": "PersonResponsibleAbn.entityType",
+          "properties": {
+            "entityTypeCode": {
+              "type": "string",
+              "title": " : Code",
+              "description": "PersonResponsibleAbn.entityType.entityTypeCode"
+            },
+            "entityDescription": {
+              "type": "string",
+              "title": " : Description",
+              "description": "PersonResponsibleAbn.entityType.entityDescription"
+            }
+          }
+        },
+        "goodsAndServicesTax": {
+          "type": "object",
+          "title": " : Goods and Services Tax",
+          "description": "PersonResponsibleAbn.goodsAndServicesTax",
+          "properties": {
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "PersonResponsibleAbn.goodsAndServicesTax.effectiveFrom"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "PersonResponsibleAbn.goodsAndServicesTax.effectiveTo"
+            }
+          }
+        },
+        "mainName": {
+          "type": "object",
+          "title": " : Main Name",
+          "description": "PersonResponsibleAbn.mainName",
+          "properties": {
+            "organisationName": {
+              "type": "string",
+              "title": " : Organisation",
+              "description": "PersonResponsibleAbn.mainName.organisationName"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "PersonResponsibleAbn.mainName.effectiveFrom"
+            }
+          }
+        },
+        "mainTradingName": {
+          "type": "object",
+          "title": " : Main Trading Name",
+          "description": "PersonResponsibleAbn.mainTradingName",
+          "properties": {
+            "organisationName": {
+              "type": "string",
+              "title": " : Organisation Name",
+              "description": "PersonResponsibleAbn.mainTradingName.organisationName"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "PersonResponsibleAbn.mainTradingName.effectiveFrom"
+            }
+          }
+        },
+        "mainBusinessPhysicalAddress": {
+          "type": "object",
+          "title": " : Main Business Physical Address",
+          "description": "PersonResponsibleAbn.mainBusinessPhysicalAddress",
+          "properties": {
+            "stateCode": {
+              "type": "string",
+              "title": " : State Code",
+              "description": "PersonResponsibleAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "postCode": {
+              "type": "string",
+              "title": " : Post Code",
+              "description": "PersonResponsibleAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "PersonResponsibleAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "PersonResponsibleAbn.mainBusinessPhysicalAddress.stateCode"
+            }
+          }
+        },
+        "businessName": {
+          "type": "array",
+          "title": " : Business Name",
+          "description": "PersonResponsibleAbn.businessName",
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "organisationName": {
+                "type": "string",
+                "title": " : Organisation Name",
+                "description": "PersonResponsibleAbn.businessName[].organisationName"
+              },
+              "effectiveFrom": {
+                "type": "string",
+                "title": " : Effective From",
+                "description": "PersonResponsibleAbn.businessName[].effectiveFrom"
+              }
+            }
+          }
+        }
+      }
+    },
+    "OwnerAbn": {
+      "required": [],
+      "type": "object",
+      "title": "Owner ABN",
+      "description": "OwnerAbn",
+      "properties": {
+        "recordLastUpdatedDate": {
+          "type": "string",
+          "title": " : Last Updated Date",
+          "description": "OwnerAbn.recordLastUpdatedDate"
+        },
+        "ABN": {
+          "type": "object",
+          "title": " : ABN",
+          "description": "OwnerAbn.ABN",
+          "properties": {
+            "identifierValue": {
+              "type": "string",
+              "title": " : Identifier Value",
+              "description": "OwnerAbn.ABN.identifierValue"
+            },
+            "isCurrentIndicator": {
+              "type": "string",
+              "title": " : Is Current Indicator",
+              "description": "OwnerAbn.ABN.isCurrentIndicator"
+            },
+            "replacedFrom": {
+              "type": "string",
+              "title": " : Replaced From",
+              "description": "OwnerAbn.ABN.replacedFrom"
+            }
+          }
+        },
+        "entityStatus": {
+          "type": "object",
+          "title": " : Entity Status",
+          "description": "OwnerAbn.entityStatus",
+          "properties": {
+            "entityStatusCode": {
+              "type": "string",
+              "title": " : Code",
+              "description": "OwnerAbn.entityStatus.entityStatusCode"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "OwnerAbn.entityStatus.effectiveFrom"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "OwnerAbn.entityStatus.effectiveTo"
+            }
+          }
+        },
+        "ASICNumber": {
+          "type": "string",
+          "title": " : ASIC Number",
+          "description": "OwnerAbn.ASICNumber"
+        },
+        "entityType": {
+          "type": "object",
+          "title": " : Entity Type",
+          "description": "OwnerAbn.entityType",
+          "properties": {
+            "entityTypeCode": {
+              "type": "string",
+              "title": " : Code",
+              "description": "OwnerAbn.entityType.entityTypeCode"
+            },
+            "entityDescription": {
+              "type": "string",
+              "title": " : Description",
+              "description": "OwnerAbn.entityType.entityDescription"
+            }
+          }
+        },
+        "goodsAndServicesTax": {
+          "type": "object",
+          "title": " : Goods and Services Tax",
+          "description": "OwnerAbn.goodsAndServicesTax",
+          "properties": {
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "OwnerAbn.goodsAndServicesTax.effectiveFrom"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "OwnerAbn.goodsAndServicesTax.effectiveTo"
+            }
+          }
+        },
+        "mainName": {
+          "type": "object",
+          "title": " : Main Name",
+          "description": "OwnerAbn.mainName",
+          "properties": {
+            "organisationName": {
+              "type": "string",
+              "title": " : Organisation",
+              "description": "OwnerAbn.mainName.organisationName"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "OwnerAbn.mainName.effectiveFrom"
+            }
+          }
+        },
+        "mainTradingName": {
+          "type": "object",
+          "title": " : Main Trading Name",
+          "description": "OwnerAbn.mainTradingName",
+          "properties": {
+            "organisationName": {
+              "type": "string",
+              "title": " : Organisation Name",
+              "description": "OwnerAbn.mainTradingName.organisationName"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "OwnerAbn.mainTradingName.effectiveFrom"
+            }
+          }
+        },
+        "mainBusinessPhysicalAddress": {
+          "type": "object",
+          "title": " : Main Business Physical Address",
+          "description": "OwnerAbn.mainBusinessPhysicalAddress",
+          "properties": {
+            "stateCode": {
+              "type": "string",
+              "title": " : State Code",
+              "description": "OwnerAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "postCode": {
+              "type": "string",
+              "title": " : Post Code",
+              "description": "OwnerAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "effectiveFrom": {
+              "type": "string",
+              "title": " : Effective From",
+              "description": "OwnerAbn.mainBusinessPhysicalAddress.stateCode"
+            },
+            "effectiveTo": {
+              "type": "string",
+              "title": " : Effective To",
+              "description": "OwnerAbn.mainBusinessPhysicalAddress.stateCode"
+            }
+          }
+        },
+        "businessName": {
+          "type": "array",
+          "title": " : Business Name",
+          "description": "OwnerAbn.businessName",
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "organisationName": {
+                "type": "string",
+                "title": " : Organisation Name",
+                "description": "OwnerAbn.businessName[].organisationName"
+              },
+              "effectiveFrom": {
+                "type": "string",
+                "title": " : Effective From",
+                "description": "OwnerAbn.businessName[].effectiveFrom"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BiosecurityCertificateFee": {
+      "type": "number",
+      "title": "BiosecurityCertificateFee",
+      "description": "BiosecurityCertificateFee",
+      "default": 75
+    },
+    "CustomerReferenceNumber": {
+      "type": "string",
+      "title": "CustomerReferenceNumber",
+      "description": "CustomerReferenceNumber",
+      "default": "4000120,O-0005343.01.01.01,SZ"
+    }
+  },
+  "required": []
+}
