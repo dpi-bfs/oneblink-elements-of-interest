@@ -7,8 +7,8 @@ type JSONSchema = {
   items?: any;
 };
 
-function getKeyNames(schema: JSONSchema): string[] {
-  const allKeys: Set<string> = new Set();
+function getKeyTitles(schema: JSONSchema): { [key: string]: string } {
+  const allKeys: { [key: string]: string } = {};
   const geoParentKeys: Set<string> = new Set();
 
   // Helper function to check if 'geo' is a direct child of this properties object
@@ -25,15 +25,17 @@ function getKeyNames(schema: JSONSchema): string[] {
         const fullKey = prefix ? `${prefix}.${key}` : key;
         const property = properties[key];
 
-        // Add current key to all keys set
-        allKeys.add(fullKey);
+        // Add current key and its title to allKeys if it has a title
+        if (property.title) {
+          allKeys[fullKey] = property.title;
+        }
 
         // Check if 'geo' is a direct child of this properties object
         if (property.type === "object" && property.properties) {
           if (hasGeoAsChild(property.properties)) {
             geoParentKeys.add(fullKey); // Add the immediate parent key
           }
-          // Continue checking deeper levels
+          // Commenting out the line to stop checking deeper levels
           // iterateProperties(property.properties, fullKey);
         }
 
@@ -42,8 +44,8 @@ function getKeyNames(schema: JSONSchema): string[] {
           if (hasGeoAsChild(property.items.properties)) {
             geoParentKeys.add(`${fullKey}[]`); // Add the array parent key
           }
-          // Continue checking deeper levels
-          iterateProperties(property.items.properties, `${fullKey}[]`);
+          // Commenting out the line to stop checking deeper levels
+          // iterateProperties(property.items.properties, `${fullKey}[]`);
         }
       }
     }
@@ -54,9 +56,13 @@ function getKeyNames(schema: JSONSchema): string[] {
   }
 
   // Filter out deeply nested keys, keep only the immediate parent of 'geo'
-  return Array.from(allKeys).filter(key => geoParentKeys.has(key) || !key.includes('.geo'));
+  return Object.fromEntries(
+    Object.entries(allKeys).filter(
+      ([key]) => geoParentKeys.has(key) || !key.includes('.geo')
+    )
+  );
 }
 
 // Use the function
-const keyNames = getKeyNames(schema);
-console.log(keyNames);
+const keyTitles = getKeyTitles(schema);
+console.log(keyTitles);

@@ -1,0 +1,1820 @@
+{
+  "id": 19049,
+  "name": "Parthenium Weed Carriers - Record of Movement",
+  "description": "PartheniumROM",
+  "organisationId": "57ede17e01d7f85383b56c81",
+  "elements": [
+    {
+      "id": "ce31a3b4-a9ed-4b27-9999-ccc6abec9eb8",
+      "label": "Introduction",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "trackingCode",
+          "label": "Digital reference code",
+          "type": "text",
+          "required": false,
+          "id": "329a2da7-6d0d-4cac-86e2-363d0f93a02d",
+          "conditionallyShow": false,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false
+        },
+        {
+          "name": "env",
+          "label": "env",
+          "type": "select",
+          "required": false,
+          "id": "e9bd1eca-00f3-4cee-a3d9-324579bbb303",
+          "conditionallyShow": false,
+          "defaultValue": "ENV",
+          "optionsType": "DYNAMIC",
+          "conditionallyShowOptions": false,
+          "dynamicOptionSetId": 360,
+          "customCssClasses": [
+            "hidden",
+            "exclude-pdf"
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false
+        },
+        {
+          "name": "PartheniumWeedCarrierRecordOfMovementHeading",
+          "label": "Parthenium Weed Carriers - Record of Movement",
+          "type": "heading",
+          "id": "e55677e5-2382-4697-b5a4-96b820e4121c",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "IntroductionInfo",
+          "label": "IntroductionInfo",
+          "type": "html",
+          "id": "2315ce46-8ce9-4a59-98e7-97e56a238a80",
+          "conditionallyShow": false,
+          "defaultValue": "<div>Operators of grain harvesting machinery (i.e. grain harvesters and combs/fronts) can use this form to register a\n  <strong>Parthenium Weed Carriers - Record of Movement</strong> with the Department of Primary Industries and Regional Development (DPIRD) and be\n  issued with a <strong>Carrier Biosecurity Certificate</strong><span>.</div>\n<div><br></div>\n<div>Grain harvesting machinery that has been used in Queensland is prohibited from entering NSW from Queensland under\n  the NSW Biosecurity Act 2015, unless the operator has:</div>\n<div><br></div>\n<ul>\n  <li>registered a Record of Movement with DPRID (using this form), AND</li>\n  <li>cleaned the machinery in a manner that is consistent with Schedule 1 of the <a\n      href=\"https://legislation.nsw.gov.au/file/2019-605%2020240901.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Biosecurity\n      Order (Permitted Activities) 2019</a><span>, AND</li>\n  <li>presented the machinery for inspection at an approved facility.</li>\n</ul>\n<div><br></div>\n<div>Operators that meet these conditions will be issued with a <strong>Carrier Biosecurity Certificate</strong><span> and authorised to cross the border into NSW.</div>\n<div><br></div>\n<div><em>Brand-new unused harvesters and combs/fronts are exempt from having to register a Parthenium Weed\n    Carriers - Record of Movement and hold a Carrier Biosecurity Certificate before entering NSW from\n    Queensland.</em></div>\n<div><br></div>\n<div><em>This season the fee for the Biosecurity Certificate is $75, $75.30 to pay with card surcharge. Visa or Mastercard accepted. The charge is GST-free. A refund can be requested if the machinery is not presented for inspection. If you no longer require a carrier biosecurity certificate contact <a href=\"mailto:weeds@dprid.nsw.gov.au\">weeds@dprid.nsw.gov.au</a> to request a refund.</em></div>\n<div><br></div>\n<div>Further details: <a href=\"https://www.dpi.nsw.gov.au/biosecurity/weeds/parthenium-greatest-threat\"\n    rel=\"noopener noreferrer\" target=\"_blank\">Parthenium - our greatest threat</a>.</div>",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "UserKeyInfo",
+          "label": "UserKeyInfo",
+          "type": "html",
+          "id": "f1bc2dce-d505-4df1-aedf-1fc55dd746b0",
+          "conditionallyShow": false,
+          "defaultValue": "<div>\n<em>\n<span class=\"ob-label__required\">Required fields marked with</span>\n</em>\n</div>",
+          "customCssClasses": [
+            "exclude-pdf"
+          ]
+        },
+        {
+          "label": "Form privacy statement",
+          "type": "section",
+          "id": "901531db-8bfd-44c7-986e-411248b0f771",
+          "conditionallyShow": false,
+          "elements": [
+            {
+              "name": "FormPrivacyStatmentInfo",
+              "label": "FormPrivacyStatementInfo",
+              "type": "html",
+              "id": "51d7c7b2-19e0-42c7-bd4f-5a01faa7a2fc",
+              "conditionallyShow": false,
+              "defaultValue": "<div>\n  When you complete a form on this website the Department of Primary Industries\n  and Regional Development (DPIRD) will ask you to provide personal information\n  (such as your name, email address and telephone number). This information will\n  allow the department to trace the movements of grain harvesting machinery that\n  has entered NSW from Queensland. The NSW destinations where that machinery is\n  used will be inspected by an authorised officer for the presence of parthenium\n  weed, at a future date.\n</div>\n<div><br /></div>\n<div>\n  You must provide this information, otherwise we are unable to issue a\n  Parthenium Weed Carrier Biosecurity Certificate to you. We may use and\n  disclose your information as is reasonably necessary for the purpose of\n  performing biosecurity risk functions under, or reasonably contemplated by,\n  the <em>Biosecurity Act 2015</em>. We will not otherwise disclose information\n  about you to any person except where permitted by law. If you would like to\n  gain access to, or amend your personal information, or require more details\n  about privacy please contact us\n  <a href=\"mailto:gipa@dpird.nsw.gov.au\" rel=\"noopener noreferrer\"\n    >gipa@dpird.nsw.gov.au</a\n  >\n</div>\n<div><br /></div>\n<div>\n  Clicking on the 'submit' button on the form acts as your consent for us to\n  collect the information you have provided. Before you submit this information,\n  we will take reasonable steps to inform you of, where applicable, any law that\n  requires the information to be collected and which fields are mandatory, and\n  which are optional.\n</div>\n",
+              "customCssClasses": [
+                "info-info"
+              ]
+            }
+          ],
+          "isCollapsed": true
+        },
+        {
+          "name": "VersionInfo",
+          "label": "VersionInfo",
+          "type": "html",
+          "id": "30f70a52-105c-43a7-ba93-da0e591d35a8",
+          "conditionallyShow": false,
+          "defaultValue": "<div style=\"text-align: right;\">v20240911-1715</div>"
+        },
+        {
+          "name": "__helpDialogInfo",
+          "label": "__helpDialogInfo",
+          "type": "html",
+          "id": "93d83f12-e7cd-454f-99c8-781049eca4bf",
+          "conditionallyShow": false,
+          "defaultValue": "<div>Having trouble with this form?</div>\n<div><br /></div>\n<div>\n  Please email\n  <a href=\"mailto:weeds@dpi.nsw.gov.au\" rel=\"noopener noreferrer\"\n    >weeds@dpi.nsw.gov.au</a\n  >\n</div>\n"
+        },
+        {
+          "name": "__receiptPageInfo",
+          "label": "__receiptPageInfo",
+          "type": "html",
+          "id": "cc59d976-eab9-4b30-bd8b-5a6dc9c7862f",
+          "conditionallyShow": false,
+          "defaultValue": "<div>\n  If the \"person responsible email\" and/or \"owner email\" was supplied, a pdf copy of\n  this Record of Movement and (if a payment is made) Tax Invoice/Receipt has been automatically\n  emailed. This will contain the \"reference code\" below. So no need to copy in\n  that case.\n</div>\n<div><br /></div>\n<div>\n  The [Download a PDF copy of your form] button and \"Send yourself an email with a PDF copy for your records\" text box below, only provide a copy of the Record of Movement.\n</div>\n"
+        },
+        {
+          "name": "__receiptContactInfo",
+          "label": "__receiptContactInfo",
+          "type": "html",
+          "id": "75f543d1-b0dd-483f-b30b-e18b36616a19",
+          "conditionallyShow": false,
+          "defaultValue": "<div>\n  If you are have any questions please email\n  <a\n    href=\"mailto:weeds@dpi.nsw.gov.au\"\n    rel=\"noopener noreferrer\"\n    ><strong>weeds@dpi.nsw.gov.au</strong></a\n  >\n</div>\n"
+        },
+        {
+          "name": "__linkToRestart",
+          "label": "__linkToRestart",
+          "type": "boolean",
+          "required": false,
+          "id": "95fbd0db-c7c2-460f-ad6a-99d02bdad530",
+          "conditionallyShow": false,
+          "readOnly": true,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "defaultValue": true
+        }
+      ]
+    },
+    {
+      "id": "daebf5cf-acb9-4a2f-94c9-741cf2043277",
+      "label": "Person responsible",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "PersonResponsibleHeading",
+          "label": "Person responsible",
+          "type": "heading",
+          "id": "c2016d6c-f4be-47a6-b091-36d37028359d",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "IsInspectorFillingRom",
+          "label": "Are you a biosecurity certifier filling this record of movement form out on behalf of the person responsible?",
+          "type": "radio",
+          "required": true,
+          "id": "15359627-dad3-4810-92b1-b33c8a779e1e",
+          "conditionallyShow": false,
+          "options": [
+            {
+              "id": "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f",
+              "label": "Yes",
+              "value": "Yes",
+              "displayAlways": false
+            },
+            {
+              "id": "2d53a111-22ff-486c-84c9-1a9144639108",
+              "label": "No",
+              "value": "No",
+              "displayAlways": false
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "optionsType": "CUSTOM",
+          "conditionallyShowOptions": false,
+          "defaultValue": "2d53a111-22ff-486c-84c9-1a9144639108",
+          "hintPosition": "BELOW_LABEL",
+          "hint": "A biosecurity certifier may be filling out this form: to provide assistance to the person responsible; or entering data after-the-fact (based on paper records of inspections past)."
+        },
+        {
+          "name": "BiosecurityCertifierCode",
+          "label": "Biosecurity certifier code",
+          "type": "text",
+          "required": false,
+          "id": "0547af90-50ce-42ea-ad2a-cc82111f4f23",
+          "conditionallyShow": true,
+          "readOnly": false,
+          "isDataLookup": true,
+          "isElementLookup": false,
+          "dataLookupId": 424,
+          "customCssClasses": [
+            "exclude-pdf"
+          ],
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "type": "OPTIONS",
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f"
+              ]
+            }
+          ],
+          "regexPattern": "^[a-z]{2}\\d{2}$",
+          "regexMessage": "Code not in correct format."
+        },
+        {
+          "name": "InspectorFillingRom",
+          "label": "Biosecurity certifier filling record of movement",
+          "type": "text",
+          "required": true,
+          "id": "d37b772f-aff0-4ad5-b923-8035f7719da3",
+          "conditionallyShow": true,
+          "readOnly": true,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "requiresAllConditionallyShowPredicates": true,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f"
+              ],
+              "type": "OPTIONS"
+            }
+          ],
+          "hintPosition": "BELOW_LABEL",
+          "hint": "<div>If this doesn't update with your name even after the \"Biosecurity certifier code\" lookup returns a green tick: your code was incorrect. In the field above, \"Biosecurity certifier code\", try your correct code, and click [Lookup].</div>"
+        },
+        {
+          "name": "InspectorFillingRomClearNameInfo",
+          "label": "InspectorFillingRomClearNameInfo",
+          "type": "html",
+          "id": "b01143f0-c9d7-4937-88ac-eb58502c8ec0",
+          "conditionallyShow": true,
+          "defaultValue": "<div>If, after a [Lookup], you wish to clear the name returned to \"Biosecurity certifier filling record of movement\" then:</div><div><br></div><ul class=\"ql-list-no-margin\"><li> In \"Biosecurity certifier code\" clear all text; and</li><li> Click [Lookup] again.</li></ul>",
+          "customCssClasses": [
+            "info-info",
+            "exclude-pdf"
+          ],
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "type": "OPTIONS",
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f"
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Person responsible details",
+          "type": "section",
+          "id": "3ec19d44-86b0-470e-bb3d-fb06e2cccb56",
+          "conditionallyShow": false,
+          "elements": [
+            {
+              "name": "PersonResponsibleFirstName",
+              "label": "First name",
+              "type": "text",
+              "required": true,
+              "id": "a2ada4e4-cf8c-40db-bdca-86612b5d439a",
+              "conditionallyShow": false,
+              "maxLength": 80,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "PersonResponsibleLastName",
+              "label": "Last name",
+              "type": "text",
+              "required": true,
+              "id": "11448fc0-e772-49b1-a93d-66e9d168cebc",
+              "conditionallyShow": false,
+              "maxLength": 80,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "PersonResponsibleEmail",
+              "label": "Email",
+              "type": "email",
+              "required": false,
+              "id": "69f38ffe-7708-4e0d-acf7-722e9f25a651",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "The Record of Movement and, after inspection, Biosecurity Certificate will be emailed to this address."
+            },
+            {
+              "name": "EmailWarning",
+              "label": "PersonResponsibleEmailWarning",
+              "type": "html",
+              "id": "31651a89-180f-4ff4-845c-afa9c25be975",
+              "conditionallyShow": true,
+              "defaultValue": "<div>An email is not required, but without it we can't issue you a digital (PDF) Record of Movement nor digital (PDF) Biosecurity Certificate.</div>",
+              "customCssClasses": [
+                "info-warning",
+                "exclude-pdf"
+              ],
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "69f38ffe-7708-4e0d-acf7-722e9f25a651",
+                  "type": "VALUE",
+                  "hasValue": false
+                }
+              ]
+            },
+            {
+              "name": "PersonResponsibleCanAccessEmailOnTheRoad",
+              "label": "Can you readily access your email from a mobile device, while on the road?",
+              "type": "radio",
+              "required": true,
+              "id": "5ea1fc72-8694-41d2-832c-4fe5c20ae291",
+              "conditionallyShow": true,
+              "options": [
+                {
+                  "id": "a8edd4bd-cf87-419f-a965-cd746c8f64ec",
+                  "label": "Yes",
+                  "value": "Yes",
+                  "displayAlways": false
+                },
+                {
+                  "id": "b116b311-6cad-4283-8472-8ff4588286c5",
+                  "label": "No",
+                  "value": "No",
+                  "displayAlways": false
+                },
+                {
+                  "id": "b811b5fd-14d6-41c1-8286-e8eb653b18fd",
+                  "label": "Unknown",
+                  "value": "Unknown",
+                  "displayAlways": false
+                }
+              ],
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div>\n  This season it is not required that you can access email while on the road. We\n  are collecting information to improve processes for next season. The \"Unknown\"\n  option is for biosecurity certifiers filling this form out based on prior\n  paper based records.\n</div>\n",
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "CUSTOM",
+              "conditionallyShowOptions": false,
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "69f38ffe-7708-4e0d-acf7-722e9f25a651",
+                  "type": "VALUE",
+                  "hasValue": true
+                }
+              ]
+            },
+            {
+              "name": "PersonResponsibleMobilePhone",
+              "label": "Mobile phone",
+              "type": "telephone",
+              "required": true,
+              "id": "3eb4d33b-63d4-4b82-9bb2-40ec07d53f56",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "regexPattern": "^[\\d\\s\\+\\(\\)]{8,}$",
+              "regexMessage": "Must contain any of: digits; spaces; brackets \"(\", \")\"; or a plus \"+\". Must be a minimum of 8 characters.",
+              "customCssClasses": []
+            },
+            {
+              "name": "PersonResponsibleAlternatePhone",
+              "label": "Alternate phone",
+              "type": "telephone",
+              "required": false,
+              "id": "d655e636-6b0a-4a25-9f20-7b8ef626f7bf",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "regexPattern": "^[\\d\\s\\+\\(\\)]{8,}$",
+              "regexMessage": "Must contain any of: digits; spaces; brackets \"(\", \")\"; or a plus \"+\". Must be a minimum of 8 characters"
+            }
+          ],
+          "canCollapseFromBottom": false,
+          "isCollapsed": false
+        }
+      ]
+    },
+    {
+      "id": "9785b75f-eeb0-4b09-8f15-030d5e1459cf",
+      "label": "Movement details",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "MovementDetailsHeading",
+          "label": "Movement details",
+          "type": "heading",
+          "id": "6949203c-c666-416f-a381-2f081da56129",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "MovementDetailsWarning",
+          "label": "MovementDetailsWarning",
+          "type": "html",
+          "id": "44e99a19-becc-44e6-b5ad-82ed11755ad5",
+          "conditionallyShow": false,
+          "defaultValue": "<div>All offices require 24 hours' notice of your intention to present machinery for inspection. To notify offices, ring and leave a message on the answering service. Machinery can only be inspected during daylight hours.</div>\n<div><br /></div>\n<ul>\n  <li>Boggabilla: Newell Highway, Boggabilla, NSW. (07) 4671 1227.</li>\n  <li>Currumbin: Currumbin Class Road, Currumbin Waters, QLD. 0429 185 136.</li>\n  <li>Hebel: Margaret Street, Hebel, QLD. (07) 4625 0916.</li>\n  <li>Mungindi: Carnarvon Highway, Mungindi, QLD. (02) 6753 2323.</li>\n</ul>",
+          "customCssClasses": [
+            "info-warning"
+          ]
+        },
+        {
+          "name": "InspectionFacilityIntended",
+          "label": "Inspection facility intended",
+          "type": "radio",
+          "required": false,
+          "id": "a040ab03-47a7-431b-b59b-187c7f574f2c",
+          "conditionallyShow": false,
+          "optionsType": "DYNAMIC",
+          "conditionallyShowOptions": false,
+          "dynamicOptionSetId": 559,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "hintPosition": "BELOW_LABEL",
+          "hint": "<div><span style=\"color: rgb(59, 59, 59);\">Optional. The inspection facility you intend to visit. At the inspection facility this helps the inspector find your Record of Movement in their system. You are free to go to a different inspection facility if plans change, without having to resubmit a new Record of Movement.</span></div>",
+          "customCssClasses": []
+        },
+        {
+          "name": "ExpectedInspectionDateInfo",
+          "label": "ExpectedInspectionDateInfo",
+          "type": "html",
+          "id": "ed4a3c17-9963-4b3b-93db-ecc0d4956189",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "defaultValue": "Biosecurity Certifiers: for the 2023 season supply in \"Expected inspection date\" the Actual Inspection date.",
+          "customCssClasses": [
+            "info-info"
+          ],
+          "conditionallyShowPredicates": [
+            {
+              "type": "OPTIONS",
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ExpectedInspectionDate",
+          "label": "Expected inspection date",
+          "type": "date",
+          "required": true,
+          "id": "8b114e33-2848-4b6e-a3fe-0c421992aec5",
+          "conditionallyShow": false,
+          "hintPosition": "BELOW_LABEL",
+          "hint": "<div><span style=\"color: rgb(59, 59, 59);\">This is the expected date of your attendance at a facility for inspection. Use the actual date if filling out at the facility on inspection day; or your best guess if filling out ahead of inspection.</span></div>",
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false
+        },
+        {
+          "name": "OwnerHeading",
+          "label": "Owner ",
+          "type": "heading",
+          "id": "e0e53f4f-da2b-4d8b-b4d4-aaf61986cb77",
+          "conditionallyShow": false,
+          "headingType": 3
+        },
+        {
+          "name": "OwnerInfo",
+          "label": "OwnerInfo",
+          "type": "html",
+          "id": "42ff4bfe-56da-417b-93f9-5b2034fec93c",
+          "conditionallyShow": false,
+          "defaultValue": "Only one owner per record of movement.",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "Owner",
+          "label": "Owner",
+          "type": "select",
+          "required": true,
+          "id": "41a73524-31b7-42b9-a174-3365b2df3605",
+          "conditionallyShow": false,
+          "options": [
+            {
+              "id": "96c6fa1b-252a-46e3-b28e-af19b0f63208",
+              "label": "{ELEMENT:PersonResponsibleFirstName} {ELEMENT:PersonResponsibleLastName} | Person responsible",
+              "value": "{ELEMENT:PersonResponsibleFirstName} {ELEMENT:PersonResponsibleLastName} | Person responsible",
+              "displayAlways": false
+            },
+            {
+              "id": "ae4861d3-7904-46cb-8448-44f80b88787f",
+              "label": "Another person",
+              "value": "Another person",
+              "displayAlways": false
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "optionsType": "CUSTOM",
+          "conditionallyShowOptions": false
+        },
+        {
+          "name": "OwnerFirstName",
+          "label": "First name",
+          "type": "text",
+          "required": true,
+          "id": "9254dce2-f403-4839-9691-038b34da94ac",
+          "conditionallyShow": true,
+          "maxLength": 80,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "41a73524-31b7-42b9-a174-3365b2df3605",
+              "optionIds": [
+                "ae4861d3-7904-46cb-8448-44f80b88787f"
+              ],
+              "type": "OPTIONS"
+            }
+          ]
+        },
+        {
+          "name": "OwnerLastName",
+          "label": "Last name",
+          "type": "text",
+          "required": true,
+          "id": "77249733-6820-4089-bc7a-e981e003c9d0",
+          "conditionallyShow": true,
+          "maxLength": 80,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "41a73524-31b7-42b9-a174-3365b2df3605",
+              "optionIds": [
+                "ae4861d3-7904-46cb-8448-44f80b88787f"
+              ],
+              "type": "OPTIONS"
+            }
+          ]
+        },
+        {
+          "name": "OwnerEmail",
+          "label": "Email",
+          "type": "email",
+          "required": false,
+          "id": "299f1748-8c5a-4f00-8881-8db1cddd37d5",
+          "conditionallyShow": true,
+          "hintPosition": "BELOW_LABEL",
+          "hint": "<div>The Record of Movement and, after inspection, Biosecurity Certificate will be emailed to this address.</div>",
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "41a73524-31b7-42b9-a174-3365b2df3605",
+              "optionIds": [
+                "ae4861d3-7904-46cb-8448-44f80b88787f"
+              ],
+              "type": "OPTIONS"
+            }
+          ]
+        },
+        {
+          "name": "OwnerEmailWarning",
+          "label": "OwnerEmailWarning",
+          "type": "html",
+          "id": "2b12e0a4-b29b-4890-855b-0fe201a54080",
+          "conditionallyShow": true,
+          "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">An email is not required. But please supply it if possible as this is the easiest contact method to request all the NSW destinations worked at.</span></div>",
+          "customCssClasses": [
+            "info-warning",
+            "exclude-pdf"
+          ],
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "299f1748-8c5a-4f00-8881-8db1cddd37d5",
+              "type": "VALUE",
+              "hasValue": false
+            }
+          ]
+        },
+        {
+          "name": "OwnerPhone",
+          "label": "Phone",
+          "type": "telephone",
+          "required": true,
+          "id": "452daac1-722c-4c6e-990a-56780713f7fb",
+          "conditionallyShow": true,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "regexPattern": "^[\\d\\s\\+\\(\\)]{8,}$",
+          "regexMessage": "Must contain any of: digits; spaces; brackets \"(\", \")\"; or a plus \"+\". Must be a minimum of 8 characters.",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "41a73524-31b7-42b9-a174-3365b2df3605",
+              "optionIds": [
+                "ae4861d3-7904-46cb-8448-44f80b88787f"
+              ],
+              "type": "OPTIONS"
+            }
+          ]
+        },
+        {
+          "name": "DescriptionOfCarriersHeading",
+          "label": "Description of carriers",
+          "type": "heading",
+          "id": "75647dca-7f14-46ba-96d2-0a060067e5c4",
+          "conditionallyShow": false,
+          "headingType": 3
+        },
+        {
+          "name": "DescriptionOfCarrierInfo",
+          "label": "DescriptionOfCarriersInfo",
+          "type": "html",
+          "id": "19a40583-6564-4a4a-af0b-b8942691ae5e",
+          "conditionallyShow": false,
+          "defaultValue": "<div>Only add the carrier(s) - the machinery - being presented together for inspection.</div><div><br></div><div>If you make an error, an inspector can edit the details of your carriers. If that happens,  the carrier details listed on your Record of Movement will be different from the carrier details listed on the Biosecurity Certificate. The Biosecurity Certificate is the authoritative record of the carrier details.</div>",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "Carriers",
+          "label": "Carriers",
+          "type": "repeatableSet",
+          "id": "e47eee44-d6c4-48c3-9765-192aa3fec0e2",
+          "conditionallyShow": false,
+          "elements": [
+            {
+              "name": "CarrierType",
+              "label": "Carrier type",
+              "type": "radio",
+              "required": true,
+              "id": "08466fad-8656-4b52-8ec7-c9a28e00f99d",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "DYNAMIC",
+              "conditionallyShowOptions": false,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "\"Comb\" and \"front\" have the same meaning.",
+              "dynamicOptionSetId": 551
+            },
+            {
+              "name": "CarrierMake",
+              "label": "Make",
+              "type": "text",
+              "required": true,
+              "id": "e390b3ca-250e-48f1-a147-53c49f078822",
+              "conditionallyShow": false,
+              "maxLength": 30,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "CarrierModel",
+              "label": "Model",
+              "type": "text",
+              "required": true,
+              "id": "706b24db-6579-4c4d-91ce-3cfd204c98be",
+              "conditionallyShow": false,
+              "maxLength": 30,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "CarrierSerialNumber",
+              "label": "Serial number",
+              "type": "text",
+              "required": true,
+              "id": "dd183626-9b44-4981-958a-c99f83c3173a",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div class=\"info-info info-slim\">You only need to give us the last 6 characters of the serial number.</div>",
+              "maxLength": 80,
+              "minLength": 6
+            },
+            {
+              "name": "CarrierRegistrationNumber",
+              "label": "Registration number",
+              "type": "text",
+              "required": false,
+              "id": "19d50be2-208c-49d2-a9fc-427356f5b3b4",
+              "conditionallyShow": false,
+              "maxLength": 7,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            }
+          ],
+          "minSetEntries": 1,
+          "readOnly": false,
+          "addSetEntryLabel": "Add carrier",
+          "removeSetEntryLabel": "Delete carrier"
+        }
+      ]
+    },
+    {
+      "id": "5c4ef4e5-be2f-4b87-87e9-86b9e77be61e",
+      "label": "Origin of carriers",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "OriginOfCarriersHeading",
+          "label": "Origin of carriers",
+          "type": "heading",
+          "id": "f49f2ba7-63d5-4e9f-89a4-53dccc33365b",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "OriginOfCarriersInfo",
+          "label": "OriginOfCarriersInfo",
+          "type": "html",
+          "id": "50a77a5c-ff03-48f1-b70b-9e8c447c5019",
+          "conditionallyShow": false,
+          "defaultValue": "<div>Where the carrier(s) last worked in Queensland.</div><div><br></div><div>Where there are multiple carriers this must be one origin for all the carriers. If carriers come from different origins, they must be listed on separate records of movement.</div>",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "OriginAddressNswPoint",
+          "label": "Address",
+          "type": "pointAddress",
+          "required": true,
+          "id": "3d0045dd-ccac-4630-b470-38c41c13dfa6",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "stateTerritoryFilter": [
+            "QLD"
+          ],
+          "addressTypeFilter": [
+            "physical"
+          ],
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+              "type": "VALUE",
+              "hasValue": false
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false
+        },
+        {
+          "name": "OriginCannotFindAddressBySearch",
+          "label": "I cannot find my address by search",
+          "type": "boolean",
+          "required": false,
+          "id": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+          "conditionallyShow": false,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "defaultValue": false
+        },
+        {
+          "name": "OriginManualStreetAddress",
+          "label": "Street address",
+          "type": "textarea",
+          "required": false,
+          "id": "4a9068ec-34f4-4edf-b232-f8d738ba08fd",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "maxLength": 255,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+              "type": "VALUE",
+              "hasValue": true
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "hintPosition": "BELOW_LABEL",
+          "hint": "You can supply property name."
+        },
+        {
+          "name": "OriginManualSuburb",
+          "label": "Suburb",
+          "type": "text",
+          "required": true,
+          "id": "f4cc0531-b68a-4443-9266-478fff6d5544",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "maxLength": 80,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+              "type": "VALUE",
+              "hasValue": true
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false
+        },
+        {
+          "name": "OriginManualState",
+          "label": "State",
+          "type": "select",
+          "required": true,
+          "id": "eded16aa-2118-4e6e-b03f-fca46e36a5e8",
+          "conditionallyShow": true,
+          "defaultValue": "7fc476a4-4ded-4d51-b280-3f608acac03d",
+          "options": [
+            {
+              "id": "7fc476a4-4ded-4d51-b280-3f608acac03d",
+              "label": "QLD",
+              "value": "QLD",
+              "displayAlways": false
+            }
+          ],
+          "readOnly": true,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "optionsType": "CUSTOM",
+          "conditionallyShowOptions": false,
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+              "type": "VALUE",
+              "hasValue": true
+            }
+          ]
+        },
+        {
+          "name": "OriginManualPostcode",
+          "label": "Postcode",
+          "type": "number",
+          "required": true,
+          "id": "86ddb89a-a4de-4796-a6e6-fb716a5922a0",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "1394c2bf-e015-45e2-9749-32db93e76ccf",
+              "type": "VALUE",
+              "hasValue": true
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "isSlider": false,
+          "isInteger": true,
+          "regexPattern": "4[0-9]{3}",
+          "regexMessage": "Must be a physical Queensland postcode. That is, between 4000 and 4999."
+        }
+      ]
+    },
+    {
+      "id": "baa848fd-bc69-4a33-b008-8c54c0d68e4f",
+      "label": "Destinations of carriers",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "DestinationsOfCarriersHeading",
+          "label": "Destinations of carriers",
+          "type": "heading",
+          "id": "89aec04f-b221-4d33-a5bc-1e1e23ca393e",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "DestinationsOfCarriersInfo",
+          "label": "DestinationsOfCarriersInfo",
+          "type": "html",
+          "id": "dbabf3f6-f682-468e-be58-eb8291aac555",
+          "conditionallyShow": false,
+          "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">Where there are multiple carriers (listed on the one record of movement), they are not required to travel together to the same NSW destinations. That is, they can work at separate NSW destinations.</span></div>",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "AreDestinationsKnown",
+          "label": "Do you know the destinations in NSW where the carriers will next work?",
+          "type": "radio",
+          "required": true,
+          "id": "e2d3da29-4c4a-407f-8210-a94508eb6eaf",
+          "conditionallyShow": false,
+          "options": [
+            {
+              "id": "ca7243d4-dc35-4f05-b020-f1311693921d",
+              "label": "Yes - I know at least one of the destinations",
+              "value": "Yes - I know at least one of the destinations",
+              "displayAlways": false
+            },
+            {
+              "id": "2fdb5076-0874-4397-8017-d4db61d56060",
+              "label": "No - all currently unknown, but expected to work in NSW",
+              "value": "No - all currently unknown, but expected to work in NSW",
+              "displayAlways": false
+            },
+            {
+              "id": "ffb00cf7-1a74-4e05-8e2c-2d5a8ac544db",
+              "label": "Not applicable - transiting NSW only",
+              "value": "Not applicable - transiting NSW only",
+              "displayAlways": false
+            }
+          ],
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "optionsType": "CUSTOM",
+          "conditionallyShowOptions": false
+        },
+        {
+          "name": "KnownAddressNoInfo_copy",
+          "label": "AreDestinationsKnown_YesInfo",
+          "type": "html",
+          "id": "02c9bde4-8bfc-47dd-8051-a20eb569e9c5",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">List the NSW destinations you currently know.</span></div><div><br></div><div>At season's end the owner of the carrier(s) will be contacted and be required to furnish information about all the destinations that the carrier(s) worked in NSW.</div>",
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "e2d3da29-4c4a-407f-8210-a94508eb6eaf",
+              "type": "OPTIONS",
+              "optionIds": [
+                "ca7243d4-dc35-4f05-b020-f1311693921d"
+              ]
+            }
+          ],
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "KnownAddressNoInfo",
+          "label": "AreDestinationsKnown_NoInfo",
+          "type": "html",
+          "id": "4980f915-515c-468e-816f-6219b48edf70",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">At season's end the owner of the carrier(s) will be contacted and be required to furnish information about all the destinations that the carrier(s) worked in NSW.</span></div>",
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "e2d3da29-4c4a-407f-8210-a94508eb6eaf",
+              "optionIds": [
+                "2fdb5076-0874-4397-8017-d4db61d56060"
+              ],
+              "type": "OPTIONS"
+            }
+          ],
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "Destinations",
+          "label": "Destinations",
+          "type": "repeatableSet",
+          "id": "8c48aa5a-9eb6-4da1-b43e-a1aa83c7e88b",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "elements": [
+            {
+              "name": "DestinationAddressNswPoint",
+              "label": "Address",
+              "type": "pointAddress",
+              "required": true,
+              "id": "1a8b25aa-7580-4319-88d4-2ab7fab5e30a",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShow": true,
+              "stateTerritoryFilter": [
+                "NSW"
+              ],
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+                  "type": "VALUE",
+                  "hasValue": false
+                }
+              ],
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "addressTypeFilter": [
+                "physical"
+              ]
+            },
+            {
+              "name": "DestinationCannotFindAddressBySearch",
+              "label": "I cannot find my address by search",
+              "type": "boolean",
+              "required": false,
+              "id": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "defaultValue": false
+            },
+            {
+              "name": "DestinationManualStreetAddress",
+              "label": "Street address",
+              "type": "textarea",
+              "required": false,
+              "id": "41042f60-6839-4a48-ae11-3c5c36321e1d",
+              "conditionallyShow": true,
+              "maxLength": 255,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+                  "type": "VALUE",
+                  "hasValue": true
+                }
+              ]
+            },
+            {
+              "name": "DestinationManualSuburb",
+              "label": "Suburb",
+              "type": "text",
+              "required": true,
+              "id": "29820ac8-615f-4d33-a849-2248bd740b2a",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShow": true,
+              "maxLength": 80,
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+                  "type": "VALUE",
+                  "hasValue": true
+                }
+              ],
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "DestinationManualState",
+              "label": "State",
+              "type": "select",
+              "required": true,
+              "id": "7d52ff18-9105-4f5f-9d0d-f18ed8791cfb",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShow": true,
+              "options": [
+                {
+                  "id": "37cd6ce6-d79f-4c1b-9b26-8018e1b2c9b3",
+                  "label": "NSW",
+                  "value": "NSW",
+                  "displayAlways": false
+                }
+              ],
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+                  "type": "VALUE",
+                  "hasValue": true
+                }
+              ],
+              "readOnly": true,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "CUSTOM",
+              "conditionallyShowOptions": false,
+              "defaultValue": "37cd6ce6-d79f-4c1b-9b26-8018e1b2c9b3"
+            },
+            {
+              "name": "DestinationManualPostcode",
+              "label": "Postcode",
+              "type": "number",
+              "required": true,
+              "id": "2e4b5d09-5e91-4196-aaf0-c11e10dabbdb",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShow": true,
+              "conditionallyShowPredicates": [
+                {
+                  "elementId": "b3b40ef6-7705-4a8f-b1cf-9d5d26feca6b",
+                  "type": "VALUE",
+                  "hasValue": true
+                }
+              ],
+              "isInteger": true,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "isSlider": false,
+              "regexPattern": "2[0-9]{3}",
+              "regexMessage": "Must be a physical New South Wales postcode. That is, between 2000 and 2999."
+            },
+            {
+              "name": "ExpectedDestinationArrivalDate",
+              "label": "Expected destination arrival date",
+              "type": "date",
+              "required": true,
+              "id": "6fee5c74-288c-458c-8689-b85c0b03b0e1",
+              "conditionallyShow": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div><span style=\"color: rgb(59, 59, 59);\">Use your best guess.</span></div>"
+            }
+          ],
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "e2d3da29-4c4a-407f-8210-a94508eb6eaf",
+              "optionIds": [
+                "ca7243d4-dc35-4f05-b020-f1311693921d"
+              ],
+              "type": "OPTIONS"
+            }
+          ],
+          "minSetEntries": 1,
+          "readOnly": false,
+          "addSetEntryLabel": "Add destination",
+          "removeSetEntryLabel": "Delete destination"
+        }
+      ]
+    },
+    {
+      "id": "d6d04a0b-02d0-4cef-8c78-d1f7f9db0cf3",
+      "label": "Additional information",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "AdditionalInformationHeading",
+          "label": "Additional information",
+          "type": "heading",
+          "id": "521e8374-bbb8-4f80-b715-7e00d9859aa7",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "RomUserNotes",
+          "label": "Notes",
+          "type": "textarea",
+          "required": false,
+          "id": "bfa22f79-3f6f-4c82-b063-e62b1907fe0a",
+          "conditionallyShow": false,
+          "hintPosition": "BELOW_LABEL",
+          "hint": "Anything else you'd like to tell us about.",
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "maxLength": 1054
+        }
+      ]
+    },
+    {
+      "id": "73a59410-a380-4e5f-ad1b-e999579d55d5",
+      "label": "Declaration",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "DeclarationHeading",
+          "label": "Declaration",
+          "type": "heading",
+          "id": "fcbe4d3c-7479-42ed-ae05-62164da122f8",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "name": "InspectorRepresentingThatInfo",
+          "label": "InspectorRepresentingThatInfo",
+          "type": "html",
+          "id": "62baa6e6-5dce-4ab5-bc77-8129e802ffb5",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "defaultValue": "<div>The inspector <strong>{ELEMENT:InspectorFillingRom}</strong> represents that ...</div>",
+          "conditionallyShowPredicates": [
+            {
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "b642c299-bf4e-4fc2-ba53-7e11ebabdb1f"
+              ],
+              "type": "OPTIONS"
+            }
+          ]
+        },
+        {
+          "name": "DeclarationMadeByInfo",
+          "label": "DeclarationMadeByInfo",
+          "type": "html",
+          "id": "6263aabb-c156-492b-b3d8-ad2606232877",
+          "conditionallyShow": false,
+          "defaultValue": "<div>Declaration made by the person responsible:</div><div><br></div><div><strong>{ELEMENT:PersonResponsibleFirstName} {ELEMENT:PersonResponsibleLastName}</strong></div>"
+        },
+        {
+          "name": "IDeclareThat",
+          "label": "I declare that",
+          "type": "checkboxes",
+          "required": false,
+          "id": "4f5378ef-65af-4f52-aea0-bbe60977e067",
+          "conditionallyShow": false,
+          "options": [
+            {
+              "id": "1878650d-345b-47d4-8e03-d68f478fecec",
+              "label": "the carriers identified in this Record of Movement have been cleaned in accordance with the conditions specified in Schedule 1 of the Biosecurity Order (Permitted Activities) 2019.",
+              "value": "the carriers identified in this Record of Movement have been cleaned in accordance with the conditions specified in Schedule 1 of the Biosecurity Order (Permitted Activities) 2019.",
+              "displayAlways": false
+            },
+            {
+              "id": "21bdeaf3-3d9d-43ee-8fd3-3c65375a4484",
+              "label": "the information provided in this Record of Movement is true and accurate.",
+              "value": "the information provided in this Record of Movement is true and accurate.",
+              "displayAlways": false
+            }
+          ],
+          "requiredAll": true,
+          "readOnly": false,
+          "isDataLookup": false,
+          "isElementLookup": false,
+          "buttons": false,
+          "optionsType": "CUSTOM",
+          "conditionallyShowOptions": false,
+          "canToggleAll": false,
+          "customCssClasses": []
+        },
+        {
+          "name": "DeclarationInfo",
+          "label": "DeclarationInfo",
+          "type": "html",
+          "id": "72fa4235-3fda-46bb-917b-a83d545d7e96",
+          "conditionallyShow": false,
+          "defaultValue": "<div>\n  Schedule 1 of the <a\n    href=\"https://www.legislation.nsw.gov.au/file/2019-605.pdf\"\n    rel=\"noopener noreferrer\"\n    target=\"_blank\"\n    >Biosecurity Order (Permitted Activities) 2019</a\n  >.\n</div>\n",
+          "customCssClasses": [
+            "info-info"
+          ]
+        },
+        {
+          "name": "CollectNswAddressesReminderInfo",
+          "label": "CollectNswAddressesReminderInfo",
+          "type": "html",
+          "id": "a91cab91-867a-4583-a09c-11eccb121bfc",
+          "conditionallyShow": false,
+          "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">Please record all the NSW destinations that all the carriers will work at this season, and pass this information to the owner.</span></div>",
+          "customCssClasses": [
+            "info-warning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "773215e8-0f0c-461d-b486-0005aa719ca4",
+      "label": "Payment preparation",
+      "type": "page",
+      "conditionallyShow": false,
+      "requiresAllConditionallyShowPredicates": false,
+      "elements": [
+        {
+          "name": "PaymentRoutesHeading",
+          "label": "Payment preparation",
+          "type": "heading",
+          "id": "2db824ed-6ab9-42e6-b5de-caee89c7c259",
+          "conditionallyShow": false,
+          "headingType": 2
+        },
+        {
+          "label": "Payment routes",
+          "type": "section",
+          "id": "ad513d99-e4ca-42d5-af3e-a115594cfdf7",
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShow": true,
+          "elements": [
+            {
+              "name": "PaymentRoutesInfo",
+              "label": "PaymentRoutesInfo",
+              "type": "html",
+              "id": "fef92344-8360-465c-aca4-4e6b86e11929",
+              "conditionallyShow": false,
+              "defaultValue": "<div>Payment routes are only offered when an biosecurity certifier is filling out a form on behalf of a responsible person (or owner).</div>",
+              "customCssClasses": [
+                "info-info"
+              ]
+            },
+            {
+              "name": "PaymentRoute",
+              "label": "Payment route",
+              "type": "radio",
+              "required": true,
+              "id": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+              "conditionallyShow": false,
+              "options": [
+                {
+                  "id": "961d125a-dc11-4e24-9123-11d43ca9ad6c",
+                  "label": "Pay now by card - certifier filled ROM",
+                  "value": "Pay now by card - certifier filled ROM",
+                  "displayAlways": false
+                },
+                {
+                  "id": "5d823cdd-a60f-494a-b348-59882f29d03e",
+                  "label": "Pay after border crossing",
+                  "value": "Pay after border crossing",
+                  "displayAlways": false
+                },
+                {
+                  "id": "092a6823-efea-404b-a102-b575fd43dc83",
+                  "label": "No payment required",
+                  "value": "No payment required",
+                  "displayAlways": false
+                }
+              ],
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "CUSTOM",
+              "conditionallyShowOptions": false
+            },
+            {
+              "name": "PayNowByCardInfo",
+              "label": "PayNowByCardInfo",
+              "type": "html",
+              "id": "1c7d8899-f2d4-48dd-a023-fb30af0c2151",
+              "conditionallyShow": true,
+              "defaultValue": "<div>Pay now by card. After clicking [Submit], the person responsible to enter their card details.</div>",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+                  "optionIds": [
+                    "961d125a-dc11-4e24-9123-11d43ca9ad6c"
+                  ]
+                }
+              ],
+              "customCssClasses": [
+                "info-info"
+              ]
+            },
+            {
+              "name": "PayAfterBorderCrossingInfo",
+              "label": "PayAfterBorderCrossingInfo",
+              "type": "html",
+              "id": "34773104-5ae0-4c65-83e3-35adcad5139d",
+              "conditionallyShow": true,
+              "defaultValue": "<div><span style=\"color: rgb(59, 59, 59);\">Pay after border crossing. The person responsible will be emailed or SMS'd overnight, for a link to pay.</span></div>",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+                  "optionIds": [
+                    "5d823cdd-a60f-494a-b348-59882f29d03e"
+                  ]
+                }
+              ],
+              "customCssClasses": [
+                "info-info"
+              ]
+            },
+            {
+              "name": "PaymentRouteReason",
+              "label": "Payment route reason",
+              "type": "select",
+              "required": true,
+              "id": "035dd201-41e3-4354-8762-243409929c3e",
+              "conditionallyShow": true,
+              "options": [
+                {
+                  "id": "ae075137-2a61-43cb-a883-f1dfcb06bfd4",
+                  "label": "Pay after border crossing - person responsible declined card entry on inspecter device due to security concerns ",
+                  "value": "Pay after border crossing - person responsible declined card entry on inspecter device due to security concerns",
+                  "displayAlways": false
+                },
+                {
+                  "id": "b48cff1f-ef80-4a73-b01f-cbc02bbfb33c",
+                  "label": "Pay after border crossing - system was or is unavaible to pay",
+                  "value": "Pay after border crossing - system was or is unavaible to pay",
+                  "displayAlways": false
+                },
+                {
+                  "id": "f053a5a1-eb06-4c65-a5ab-f67d92e49a70",
+                  "label": "Other",
+                  "value": "Other",
+                  "displayAlways": false
+                }
+              ],
+              "conditionallyShowOptions": false,
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "CUSTOM",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+                  "optionIds": [
+                    "5d823cdd-a60f-494a-b348-59882f29d03e"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PaymentRouteReasonOther",
+              "label": "Payment route reason - other",
+              "type": "text",
+              "required": true,
+              "id": "4df6cd25-7835-4e28-a422-bee8a050930c",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShow": true,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "035dd201-41e3-4354-8762-243409929c3e",
+                  "optionIds": [
+                    "f053a5a1-eb06-4c65-a5ab-f67d92e49a70"
+                  ]
+                }
+              ],
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false
+            },
+            {
+              "name": "NoPaymentInfo",
+              "label": "NoPaymentRequiredInfo",
+              "type": "html",
+              "id": "795b8839-cb54-49d2-91a2-f7d77c15ee08",
+              "conditionallyShow": true,
+              "defaultValue": "<div>No payment required. The ROM is for the 2023 season which was without cost.</div>",
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+                  "optionIds": [
+                    "092a6823-efea-404b-a102-b575fd43dc83"
+                  ]
+                }
+              ],
+              "customCssClasses": [
+                "info-info"
+              ]
+            }
+          ],
+          "canCollapseFromBottom": false,
+          "conditionallyShowPredicates": [
+            {
+              "type": "VALUE",
+              "elementId": "d37b772f-aff0-4ad5-b923-8035f7719da3",
+              "hasValue": true
+            }
+          ],
+          "isCollapsed": false
+        },
+        {
+          "label": "Tax invoice preparation",
+          "type": "section",
+          "id": "e00abab0-2b3d-442c-9556-4265b8cb008f",
+          "conditionallyShow": true,
+          "elements": [
+            {
+              "name": "TaxInvoicePerparationInfo",
+              "label": "TaxInvoicePerparationInfo",
+              "type": "html",
+              "id": "5373c38c-9a8e-4f67-ad50-88cb8fe6703d",
+              "conditionallyShow": false,
+              "defaultValue": "<div>This tax invoice preparation section appears when:</div>\n<div><br></div>\n<ul>\n  <li>An end user (not a biosecurity certifier) is filling out the form, or</li>\n  <li>A biosecurity certifier is filling out the form and has chosen a Payment route = \"Pay now by card\".</li>\n</ul>",
+              "customCssClasses": [
+                "info-info"
+              ]
+            },
+            {
+              "name": "TaxInvoiceTo",
+              "label": "Tax invoice to",
+              "type": "radio",
+              "required": true,
+              "id": "35bc7f36-e521-49d7-8fc5-d0bc15c88492",
+              "conditionallyShow": false,
+              "options": [
+                {
+                  "id": "315f9e72-2b21-415c-b7c5-0a1ba581b076",
+                  "label": "Person responsible",
+                  "value": "Person responsible",
+                  "displayAlways": false
+                },
+                {
+                  "id": "22b5bb42-5190-4294-a3e7-26a2ca496c46",
+                  "label": "Owner",
+                  "value": "Owner",
+                  "displayAlways": false
+                }
+              ],
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div>Which person to make out the Tax Invoice to? If responsible person and owner are the same, choose \"Owner\".</div>",
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "buttons": false,
+              "optionsType": "CUSTOM",
+              "conditionallyShowOptions": false
+            },
+            {
+              "name": "PersonResponsibleAbn",
+              "label": "Person responsible ABN",
+              "type": "abn",
+              "required": false,
+              "id": "1f3f10ef-519a-4650-894e-24887b74599d",
+              "conditionallyShow": true,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div>Optional. Supply your ABN if you'd like it to appear on the Tax Invoice. You can also enter your ACN and we'll look up your ABN (when entering an ACN press tab on your keyboard to run the search). For payments under $1000 it is not required to list your ABN on a tax invoice. </div>",
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "35bc7f36-e521-49d7-8fc5-d0bc15c88492",
+                  "optionIds": [
+                    "315f9e72-2b21-415c-b7c5-0a1ba581b076"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "OwnerAbn",
+              "label": "Owner ABN",
+              "type": "abn",
+              "required": false,
+              "id": "a55e4763-0dba-4e32-933f-881ab40f2df3",
+              "conditionallyShow": true,
+              "hintPosition": "BELOW_LABEL",
+              "hint": "<div>Optional. Supply your ABN if you'd like it to appear on the Tax Invoice. You can also enter your ACN and we'll look up your ABN (when entering an ACN press tab on your keyboard to run the search). For payments under $1000 it is not required to list your ABN on a tax invoice. </div>",
+              "readOnly": false,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "requiresAllConditionallyShowPredicates": false,
+              "conditionallyShowPredicates": [
+                {
+                  "type": "OPTIONS",
+                  "elementId": "35bc7f36-e521-49d7-8fc5-d0bc15c88492",
+                  "optionIds": [
+                    "22b5bb42-5190-4294-a3e7-26a2ca496c46"
+                  ]
+                }
+              ]
+            }
+          ],
+          "canCollapseFromBottom": false,
+          "isCollapsed": false,
+          "requiresAllConditionallyShowPredicates": false,
+          "conditionallyShowPredicates": [
+            {
+              "type": "VALUE",
+              "elementId": "d37b772f-aff0-4ad5-b923-8035f7719da3",
+              "hasValue": false
+            },
+            {
+              "type": "OPTIONS",
+              "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+              "optionIds": [
+                "961d125a-dc11-4e24-9123-11d43ca9ad6c"
+              ]
+            },
+            {
+              "type": "OPTIONS",
+              "elementId": "15359627-dad3-4810-92b1-b33c8a779e1e",
+              "optionIds": [
+                "2d53a111-22ff-486c-84c9-1a9144639108"
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Payment technical fields",
+          "type": "section",
+          "id": "49b751a6-9f98-4b3f-8b00-17f4ef7f3e1f",
+          "conditionallyShow": false,
+          "elements": [
+            {
+              "name": "BiosecurityCertificateFee",
+              "label": "BiosecurityCertificateFee",
+              "type": "number",
+              "id": "d9f52c30-5d21-4be1-a533-f3c11b30ff5f",
+              "conditionallyShow": false,
+              "defaultValue": 75,
+              "customCssClasses": [
+                "hidden",
+                "exclude-pdf"
+              ],
+              "required": false,
+              "readOnly": true,
+              "isDataLookup": false,
+              "isElementLookup": false,
+              "isSlider": false,
+              "isInteger": false,
+              "isHidden": false
+            },
+            {
+              "name": "CustomerReferenceNumber",
+              "label": "CustomerReferenceNumber",
+              "type": "text",
+              "required": true,
+              "id": "7302dc92-4cb4-4fd3-a906-8f5255888755",
+              "conditionallyShow": false,
+              "defaultValue": "4000120,O-0005343.01.01.01,SZ",
+              "readOnly": true,
+              "isDataLookup": false,
+              "isElementLookup": false
+            }
+          ],
+          "canCollapseFromBottom": true,
+          "isCollapsed": false,
+          "customCssClasses": [
+            "hidden",
+            "exclude-pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "isAuthenticated": false,
+  "paymentEvents": [
+    {
+      "type": "WESTPAC_QUICK_STREAM",
+      "configuration": {
+        "environmentId": "a9d8e8e7-1eb7-48f2-8aa7-62eaac8bcec9",
+        "elementId": "d9f52c30-5d21-4be1-a533-f3c11b30ff5f",
+        "customerReferenceNumber": "{ELEMENT:CustomerReferenceNumber}"
+      },
+      "label": "BiosecurityCertificateFeePaidAtRom",
+      "conditionallyExecute": true,
+      "requiresAllConditionallyExecutePredicates": false,
+      "conditionallyExecutePredicates": [
+        {
+          "type": "VALUE",
+          "elementId": "d37b772f-aff0-4ad5-b923-8035f7719da3",
+          "hasValue": false
+        },
+        {
+          "type": "OPTIONS",
+          "elementId": "9823b137-747b-454f-85cc-a1c5c804ab4c",
+          "optionIds": [
+            "961d125a-dc11-4e24-9123-11d43ca9ad6c"
+          ]
+        }
+      ]
+    }
+  ],
+  "submissionEvents": [
+    {
+      "type": "PDF",
+      "configuration": {
+        "toEmail": [
+          "{ELEMENT:PersonResponsibleEmail}"
+        ],
+        "pdfFileName": "{FORM_NAME} - ROM Submitted - Person Responsible Copy - {ELEMENT:trackingCode}",
+        "emailSubjectLine": "{ELEMENT:env}{FORM_NAME} - ROM Submitted - Person Responsible Copy - {ELEMENT:trackingCode}",
+        "excludedElementIds": [],
+        "excludedCSSClasses": [
+          "exclude-pdf"
+        ],
+        "includeSubmissionIdInPdf": true,
+        "includeExternalIdInPdf": true,
+        "emailTemplate": {
+          "id": 219,
+          "mapping": []
+        },
+        "excludedAttachmentElementIds": [],
+        "includePaymentInPdf": false,
+        "emailAttachmentsEndpoint": {
+          "type": "ONEBLINK_API",
+          "configuration": {
+            "apiId": "nswfoodauthority-parthenium-carrier.api.oneblink.io",
+            "apiEnvironment": "dev",
+            "apiEnvironmentRoute": "/tax-invoice",
+            "organisationManagedSecretId": 171
+          }
+        }
+      },
+      "conditionallyExecute": false,
+      "requiresAllConditionallyExecutePredicates": false,
+      "label": "PersonResponsibleRom"
+    },
+    {
+      "type": "PDF",
+      "configuration": {
+        "toEmail": [
+          "{ELEMENT:OwnerEmail}"
+        ],
+        "emailSubjectLine": "{ELEMENT:env}{FORM_NAME} - ROM Submitted - Owner Copy - {ELEMENT:trackingCode}",
+        "pdfFileName": "{FORM_NAME} - ROM Submitted - Owner Copy - {ELEMENT:trackingCode}",
+        "excludedElementIds": [],
+        "excludedCSSClasses": [
+          "exclude-pdf"
+        ],
+        "includeSubmissionIdInPdf": true,
+        "includeExternalIdInPdf": true,
+        "emailTemplate": {
+          "id": 219,
+          "mapping": []
+        },
+        "excludedAttachmentElementIds": [],
+        "includePaymentInPdf": false,
+        "emailAttachmentsEndpoint": {
+          "type": "ONEBLINK_API",
+          "configuration": {
+            "apiId": "nswfoodauthority-parthenium-carrier.api.oneblink.io",
+            "apiEnvironment": "dev",
+            "apiEnvironmentRoute": "/tax-invoice",
+            "organisationManagedSecretId": 171
+          }
+        }
+      },
+      "label": "OwnerRom",
+      "conditionallyExecute": false,
+      "requiresAllConditionallyExecutePredicates": false
+    }
+  ],
+  "approvalEvents": [
+    {
+      "type": "ONEBLINK_API",
+      "configuration": {
+        "apiId": "nswfoodauthority-parthenium-carrier.api.oneblink.io",
+        "apiEnvironment": "dev",
+        "apiEnvironmentRoute": "/base-form-approval-event",
+        "organisationManagedSecretId": 103
+      },
+      "label": "BiosecurityCertificate",
+      "conditionallyExecute": false,
+      "requiresAllConditionallyExecutePredicates": false
+    }
+  ],
+  "createdAt": "2023-08-30T02:45:28.000Z",
+  "updatedAt": "2024-09-11T07:15:22.000Z",
+  "isMultiPage": true,
+  "postSubmissionAction": "CLOSE",
+  "cancelAction": "CLOSE",
+  "formsAppEnvironmentId": 313,
+  "tags": [
+    "debbie brookfield",
+    "john bentley",
+    "customfunctions",
+    "parthenium",
+    "payment"
+  ],
+  "approvalSteps": [
+    {
+      "group": "parthenium",
+      "label": "Inspection",
+      "isConditional": false,
+      "requiresAllConditionalPredicates": false,
+      "approvalFormId": 19289,
+      "clarificationRequestEmailTemplateId": 106
+    }
+  ],
+  "approvalConfiguration": {},
+  "postSubmissionReceipt": {},
+  "submissionTitle": "{ELEMENT:env}{FORM_NAME} - {ELEMENT:InspectionFacilityIntended} - ETA: {ELEMENT:ExpectedInspectionDate} - {ELEMENT:PersonResponsibleFirstName} {ELEMENT:PersonResponsibleLastName}",
+  "updatedByUser": {
+    "email": "john.bentley@dpi.nsw.gov.au",
+    "userId": "567f8ceb-0bcb-4d3e-ad6a-731839d2f13c",
+    "username": "john.bentley@dpi.nsw.gov.au",
+    "isSAMLUser": false,
+    "providerType": "Cognito",
+    "emailVerified": true,
+    "providerUserId": "567f8ceb-0bcb-4d3e-ad6a-731839d2f13c"
+  },
+  "pointAddressEnvironmentId": "066146f0-5c93-4088-b2bb-a3e4a16a7b80",
+  "googleMapsIntegrationEnvironmentId": null,
+  "formsAppIds": [
+    1538
+  ]
+}
