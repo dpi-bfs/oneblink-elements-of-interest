@@ -1,1 +1,1 @@
-npx tsx .\scripts\formDefinitionHandling.ts
+See getOneBlinkElementNamesFromDefinition.ts code comments at the top.
