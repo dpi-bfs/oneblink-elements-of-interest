@@ -1,7 +1,9 @@
 
  ## Description
 
-Given a OneBlink Form definition return a JSON file that shows each element, as children of a parent page. 
+Given a OneBlink Form definition file return a file that shows each element of interest. 
+
+* Returns a simple json "element of interest" file.
 
 * Excludes:
   - `__` prefixed elements
@@ -9,7 +11,9 @@ Given a OneBlink Form definition return a JSON file that shows each element, as 
   - Heading elements
 
 * Shows repeatable sets and their children with "[]"
+
 * Groups elements in their pages.
+
 * In ElementAsKeyPair format where
   - key is the (technical) element name, and
   - the value is the type in brackets []; followed by the (user facing) element label. 
@@ -31,11 +35,15 @@ Given a OneBlink Form definition return a JSON file that shows each element, as 
   - View or get response
     + Click on that line > Right hand pane > Response Tab; or
     + Right click on that line > Copy Value > Copy Response
+
 * Copy response to file E.g. ./formDefinitions/RecordOfMovementDefinition.json
+
 * In this code goto config section:
   - Update import formDefinition
   - Set const outputToFile
   - Set outputFormat
+
 * Execute 
+    
     npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
 
