@@ -45,5 +45,9 @@ Given a OneBlink Form definition file return a file that shows each element of i
 
 * Execute 
     
+    npm start
+    
+    // or
+    
     npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
 
