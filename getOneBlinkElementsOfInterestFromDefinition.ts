@@ -37,7 +37,7 @@
 **/
 
 
-/*********** Config ****************************************************************/
+/**********  Config ****************************************************************/
 import formDefinition from './formDefinitions/RecordOfMovementDefinition.json';
 
 // Set to `true` to write to file, `false` to log to console
@@ -69,7 +69,9 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
       ) {
       const key = `${prefix}${element.name}${element.type === 'repeatableSet' ? '[]' : ''}`;
 
-      if (outputFormat === OutputFormat.ElementAsKeyPair) {
+      if (element.type === 'repeatableSet' && element.elements) {
+        result[key] = extractElements(element.elements, `${key}.`);
+      } else if (outputFormat === OutputFormat.ElementAsKeyPair) {
         result[key] = `[${element.type}] ${element.label}`;
       } else if (outputFormat === OutputFormat.ElementWithChildObject) {
         result[key] = {
@@ -77,15 +79,10 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
           type: element.type,
         };
       }
-
-      // Process child elements for repeatable sets
-      if (element.type === 'repeatableSet' && element.elements) {
-        result[key] = extractElements(element.elements, `${key}.`);
-      }
     }
 
     // Recursively process nested elements (like pages)
-    if (element.elements) {
+    if (element.elements && element.type !== 'repeatableSet') {
       const nestedElements = extractElements(element.elements, prefix);
       if (Object.keys(nestedElements).length > 0) {
         if (element.type === 'page') {
