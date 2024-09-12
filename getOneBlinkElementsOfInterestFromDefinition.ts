@@ -2,10 +2,10 @@
   Description:
     Given a OneBlink Form definition return a JSON file that shows each element, as children of a parent page. 
 
-
     * Excludes:
       - `__` prefixed elements
       - Info elements
+      - Heading elements
 
     * Shows repeatable sets and their children with "[]"
     * Groups elements in their pages.
@@ -27,6 +27,7 @@
     * Execute 
 
       npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
+
 **/
 
 import formDefinition from './formDefinitions/RecordOfMovementDefinition.json';
