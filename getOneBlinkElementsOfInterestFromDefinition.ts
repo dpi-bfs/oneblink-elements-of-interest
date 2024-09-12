@@ -14,7 +14,7 @@
       - the value is the type in brackets []; followed by the (user facing) element label. 
       - E.g. 
         "ExpectedInspectionDate": "[date] Expected inspection date",
-        
+
     * In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
         "ExpectedInspectionDate": {
           "label": "Expected inspection date",
@@ -35,8 +35,7 @@
       - Set const outputToFile
       - Set outputFormat
     * Execute 
-
-      npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
+        npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
 
 **/
 
