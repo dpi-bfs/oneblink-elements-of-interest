@@ -9,8 +9,12 @@
 
     * Shows repeatable sets and their children with "[]"
     * Groups elements in their pages.
-    * In ElementAsKeyPair format where key is the (technical) element name and the value is the type in brackets [] followed by the (user facing) element label. E.g. 
+    * In ElementAsKeyPair format where
+      - key is the (technical) element name, and
+      - the value is the type in brackets []; followed by the (user facing) element label. 
+      - E.g. 
         "ExpectedInspectionDate": "[date] Expected inspection date",
+        
     * In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
         "ExpectedInspectionDate": {
           "label": "Expected inspection date",
