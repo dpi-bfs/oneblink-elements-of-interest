@@ -6,12 +6,12 @@ const outputToFile = true;
 
 // Define the enum for output format
 enum OutputFormat {
-  ElementAsKeyPair,
-  ElementWithChildObject,
+  AsKeyPair,
+  WithChildObject,
 }
 
 // Set the desired output format here
-const outputFormat: OutputFormat = OutputFormat.ElementAsKeyPair;
+const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
 /*************************************************************************************/
 
 import fs from 'fs';
@@ -32,9 +32,9 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
 
       if (element.type === 'repeatableSet' && element.elements) {
         result[key] = extractElements(element.elements, `${key}.`);
-      } else if (outputFormat === OutputFormat.ElementAsKeyPair) {
+      } else if (outputFormat === OutputFormat.AsKeyPair) {
         result[key] = `[${element.type}] ${element.label}`;
-      } else if (outputFormat === OutputFormat.ElementWithChildObject) {
+      } else if (outputFormat === OutputFormat.WithChildObject) {
         result[key] = {
           label: element.label,
           type: element.type,
@@ -67,7 +67,7 @@ function toPascalCase(input: string): string {
 
 function getOutputFileName() {
   const formattedName = toPascalCase(formDefinition.name);
-  const formatSuffix = outputFormat === OutputFormat.ElementAsKeyPair ? 'ElementAsKeyPair' : 'ElementWithChildObject';
+  const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
   // const datetime = moment().format('YYYYMMDD-HHmm');
   // return `${formattedName}-${datetime}.json`;
   return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
