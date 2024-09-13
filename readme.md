@@ -25,10 +25,11 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 
 * In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
-    "ExpectedInspectionDate": {
-      "label": "Expected inspection date",
-      "type": "date"
-    }
+
+      "ExpectedInspectionDate": {
+        "label": "Expected inspection date",
+        "type": "date"
+      }
 
     - Example file: flotsam\exampleOutput\PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json
 
@@ -52,16 +53,16 @@ Another use case is when building (ironically) a paper based form that would fee
 
 * Create in your root a .blinkmrc.json as follows; supplying the correct keys
 
-    {
-      "server": {
-        "project": "oneblink-elements-of-interest",
-        "timeout": 120,
-        "variables": {
-          "FORMS_ACCESS_KEY": "99999999999999",
-          "FORMS_SECRET_KEY": "111111111111111111"
+      {
+        "server": {
+          "project": "oneblink-elements-of-interest",
+          "timeout": 120,
+          "variables": {
+            "FORMS_ACCESS_KEY": "99999999999999",
+            "FORMS_SECRET_KEY": "111111111111111111"
+          }
         }
       }
-    }
 
 * Note the form ids from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
 
@@ -69,11 +70,11 @@ Another use case is when building (ironically) a paper based form that would fee
 
 * Execute ....
     
-    npm start
-    
-    // or
-    
-    npx tsx .\src\index.ts
+      npm start
+      
+      // or
+      
+      npx tsx .\src\index.ts
 
 * Observe in folder \out\ the desired files. E.g.
 
