@@ -26,4 +26,4 @@ const outputToFile = true;
 const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
 /*************************************************************************/
 
-writeElementsOfInterestToJsonFiles(formIds, outputFormat,outputToFile)
+writeElementsOfInterestToJsonFiles(formIds, outputFormat, outputToFile)
