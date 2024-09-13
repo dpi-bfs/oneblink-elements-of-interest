@@ -1,10 +1,18 @@
 import {OutputFormat} from './projectTypes'
 import {writeElementsOfInterestToJsonFiles} from './getOneBlinkElementsOfInterestFromDefinition'
 
-/**********  Config ****************************************************************/
+/**********  Config ****************************************************************/ 
 
-const formIds: number[] = [19049]
-// const formIds: number[] = [19049,  19289]
+// Dev
+enum FormIdEnum {
+  PartheniumWeedCarriersRecordOfMovement = 19049,
+  PartheniumWeedCarriersInspection = 19289
+} 
+
+const formIds: number[] = [
+  FormIdEnum.PartheniumWeedCarriersRecordOfMovement,  
+  FormIdEnum.PartheniumWeedCarriersInspection
+]
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
