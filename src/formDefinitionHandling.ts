@@ -8,7 +8,7 @@ const formsSDK = new OneBlink.Forms({
   secretKey: BlinkMrc.server.variables.FORMS_SECRET_KEY!,
 });
 
-async function fetchFormDefinition(formID: number) {
+export async function fetchFormDefinition(formID: number) {
   try {
     const formDefinition: OneBlinkTypes.FormTypes.Form = await formsSDK.getForm(formID);
     return formDefinition;
@@ -18,14 +18,14 @@ async function fetchFormDefinition(formID: number) {
   }
 }
 
-async function main() {
-  try {
-    const formDefinition: OneBlinkTypes.FormTypes.Form  = await fetchFormDefinition(22969);
-    console.log('Form Definition:', JSON.stringify(formDefinition, null, 2));
+// async function main() {
+//   try {
+//     const formDefinition: OneBlinkTypes.FormTypes.Form  = await fetchFormDefinition(22969);
+//     console.log('Form Definition:', JSON.stringify(formDefinition, null, 2));
 
-  } catch (error) {
-    console.error('Failed to get form definition:', error);
-  }
-}
+//   } catch (error) {
+//     console.error('Failed to get form definition:', error);
+//   }
+// }
 
-main()
+// main()

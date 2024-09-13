@@ -2,7 +2,8 @@ import {OutputFormat} from './projectTypes'
 import {writeElementsOfInterestToJson} from './getOneBlinkElementsOfInterestFromDefinition'
 
 /**********  Config ****************************************************************/
-import formDefinition from '../formDefinitions/RecordOfMovementDefinition.json';
+
+const formId = 19049
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
@@ -11,4 +12,4 @@ const outputToFile = true;
 const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
 /*************************************************************************************/
 
-writeElementsOfInterestToJson(formDefinition,outputFormat,outputToFile)
+writeElementsOfInterestToJson(formId, outputFormat,outputToFile)

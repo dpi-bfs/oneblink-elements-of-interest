@@ -1,8 +1,11 @@
 
 
 import fs from 'fs';
+import { fileURLToPath } from 'url';
 import path from 'path';
 import {OutputFormat} from './projectTypes'
+import OneBlinkTypes from '@oneblink/types'
+import { fetchFormDefinition } from './formDefinitionHandling';
 // import moment from 'moment';
 
 function toPascalCase(input: string): string {
@@ -12,7 +15,7 @@ function toPascalCase(input: string): string {
     .join('');                        // Join the words together
 }
 
-function getOutputFileName(formDefinition, outputFormat) {
+function getOutputFileName(formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat) {
   const formattedName = toPascalCase(formDefinition.name);
   const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
   // const datetime = moment().format('YYYYMMDD-HHmm');
@@ -20,7 +23,9 @@ function getOutputFileName(formDefinition, outputFormat) {
   return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
 }
 
-function writeToFile(processedData: { [key: string]: any }, formDefinition, outputFormat ) {
+function writeToFile(processedData: { [key: string]: any }, formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat ) {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   const filePath = path.join(__dirname, '..\\out', getOutputFileName(formDefinition, outputFormat));
   fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
   console.log(`File saved to ${filePath}`);
@@ -66,7 +71,9 @@ function extractElements(elements: any[], prefix = '', outputFormat: OutputForma
   return result;
 }
 
-export function writeElementsOfInterestToJson(formDefinition, outputFormat: OutputFormat, outputToFile: boolean) {
+export async function writeElementsOfInterestToJson(formId: number, outputFormat: OutputFormat, outputToFile: boolean) {
+
+  const formDefinition: OneBlinkTypes.FormTypes.Form  = await fetchFormDefinition(formId)
   const processedData = extractElements(formDefinition.elements, '', outputFormat);
 
   if (outputToFile) {
