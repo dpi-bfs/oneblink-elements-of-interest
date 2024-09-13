@@ -21,7 +21,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
   - the value is the type in brackets []; followed by the (user facing) element label. 
   - E.g. 
     "ExpectedInspectionDate": "[date] Expected inspection date",
-  - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam\exampleOutput\PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
+  - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
 
 * In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
@@ -31,7 +31,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
         "type": "date"
       }
 
-    - Example file: flotsam\exampleOutput\PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json
+    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json">/flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json</a>
 
 ## Why is this useful?
 
