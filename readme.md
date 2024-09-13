@@ -49,7 +49,7 @@ Another use case is when building (ironically) a paper based form that would fee
 
 * Download code and execute ...
 
-    npm install
+      npm install
 
 * Create in your root a .blinkmrc.json as follows; supplying the correct keys
 
