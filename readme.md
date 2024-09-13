@@ -35,7 +35,20 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
     npm install
 
-* Note the form id from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
+* Create in your root a .blinkmrc.json as follows; supplying the correct keys
+
+    {
+      "server": {
+        "project": "oneblink-elements-of-interest",
+        "timeout": 120,
+        "variables": {
+          "FORMS_ACCESS_KEY": "99999999999999",
+          "FORMS_SECRET_KEY": "111111111111111111"
+        }
+      }
+    }
+
+* Note the form ids from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
 
 * In  .\src\index.ts goto the config section and set according the comments.
 
