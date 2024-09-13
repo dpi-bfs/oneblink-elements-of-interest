@@ -9,10 +9,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@oneblink/types": "github:oneblink/types",
+    "npm-check-updates": "^17.1.1",
     "tsx": "^4.19.1"
   },
   "dependencies": {
+    "@oneblink/sdk": "^8.1.1",
+    "@oneblink/types": "github:oneblink/types",
     "moment": "^2.30.1"
   }
 }
