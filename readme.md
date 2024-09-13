@@ -1,9 +1,9 @@
 
  ## Description
 
-Given a OneBlink Form Id return a file that shows each element of interest. 
+Given a set of OneBlink Form Ids write to json files that shows each element of interest, per form. 
 
-* Saves a simple json "element of interest" file.
+* Saves a simple json "element of interest" file for each form.
 
 * Excludes:
   - `__` prefixed elements
@@ -29,17 +29,28 @@ Given a OneBlink Form Id return a file that shows each element of interest.
 
 ## Usage
 
+* Install node.js.
+
+* Download code and execute ...
+
+    npm install
+
 * Note the form id from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
 
-* In  .\src\index.ts goto config section and set according the comments.
+* In  .\src\index.ts goto the config section and set according the comments.
 
-* Execute 
+* Execute ....
     
     npm start
     
     // or
     
     npx tsx .\src\index.ts
+
+* Observe in folder \out\ the desired files. E.g.
+
+  + PartheniumWeedCarriers-Inspection-ElementsOfInterest-AsKeyPair.json
+  + PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json
 
 
 ## Technical notes

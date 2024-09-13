@@ -23,10 +23,18 @@ function getOutputFileName(formDefinition: OneBlinkTypes.FormTypes.Form, outputF
   return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
 }
 
-function writeToFile(processedData: { [key: string]: any }, formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat ) {
+function writeToFile(processedData: { [key: string]: any }, formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat): void {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
-  const filePath = path.join(__dirname, '..\\out', getOutputFileName(formDefinition, outputFormat));
+
+  const outputDir = path.join(__dirname, '..', 'out');
+  
+  // Check if the "out" directory exists, and create it if it doesn't
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
+
+  const filePath = path.join(outputDir, getOutputFileName(formDefinition, outputFormat));
   fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
   console.log(`File saved to ${filePath}`);
 }
