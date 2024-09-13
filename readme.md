@@ -30,6 +30,15 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
     - Example file: flotsam\exampleOutput\PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json
 
+## Why is this useful?
+
+The main use case is when designing a database to receive data from one or more (possible complex) oneblink forms. You want to know all the relevant fields to have in the database. 
+
+One would normally do this by scanning the console. But the "elements of interest" live in a sea of irrelevant elements (headings, sections, info elements, "__" prefixed technical elements); spread across multiple tabs. Easier to have a single text file with type information to cross check against an existing or developing database schema.
+
+You might be tempted to look at submission output of a form for this work. But the problem with this is that elements are often conditionally shown. And so a particular submission might miss some elements because they where not shown.
+
+Another use case is when building (ironically) a paper based form that would feed a oneblink form. We do this in the Parthenium weed project in case our system is down. The paper form is a backup. In this case the paper form designer wants to know *all* the possible elements to show.
 
 ## Usage
 
