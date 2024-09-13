@@ -1,24 +1,32 @@
-/**********  Config ****************************************************************/
-import formDefinition from '../formDefinitions/RecordOfMovementDefinition.json';
 
-// Set to `true` to write to file, `false` to log to console
-const outputToFile = true;
-
-// Define the enum for output format
-enum OutputFormat {
-  AsKeyPair,
-  WithChildObject,
-}
-
-// Set the desired output format here
-const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
-/*************************************************************************************/
 
 import fs from 'fs';
 import path from 'path';
+import {OutputFormat} from './projectTypes'
 // import moment from 'moment';
 
-function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
+function toPascalCase(input: string): string {
+  return input
+    .split(/\s+/)                     // Split the string by whitespace
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize each word
+    .join('');                        // Join the words together
+}
+
+function getOutputFileName(formDefinition, outputFormat) {
+  const formattedName = toPascalCase(formDefinition.name);
+  const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
+  // const datetime = moment().format('YYYYMMDD-HHmm');
+  // return `${formattedName}-${datetime}.json`;
+  return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
+}
+
+function writeToFile(processedData: { [key: string]: any }, formDefinition, outputFormat ) {
+  const filePath = path.join(__dirname, '..\\out', getOutputFileName(formDefinition, outputFormat));
+  fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
+  console.log(`File saved to ${filePath}`);
+}
+
+function extractElements(elements: any[], prefix = '', outputFormat: OutputFormat): { [key: string]: any } {
   const result: { [key: string]: any } = {};
 
   for (const element of elements) {
@@ -31,7 +39,7 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
       const key = `${prefix}${element.name}${element.type === 'repeatableSet' ? '[]' : ''}`;
 
       if (element.type === 'repeatableSet' && element.elements) {
-        result[key] = extractElements(element.elements, `${key}.`);
+        result[key] = extractElements(element.elements, `${key}.`, outputFormat);
       } else if (outputFormat === OutputFormat.AsKeyPair) {
         result[key] = `[${element.type}] ${element.label}`;
       } else if (outputFormat === OutputFormat.WithChildObject) {
@@ -44,7 +52,7 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
 
     // Recursively process nested elements (like pages)
     if (element.elements && element.type !== 'repeatableSet') {
-      const nestedElements = extractElements(element.elements, prefix);
+      const nestedElements = extractElements(element.elements, prefix, outputFormat);
       if (Object.keys(nestedElements).length > 0) {
         if (element.type === 'page') {
           result[element.label] = nestedElements;
@@ -58,31 +66,14 @@ function extractElements(elements: any[], prefix = ''): { [key: string]: any } {
   return result;
 }
 
-function toPascalCase(input: string): string {
-  return input
-    .split(/\s+/)                     // Split the string by whitespace
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize each word
-    .join('');                        // Join the words together
+export function writeElementsOfInterestToJson(formDefinition, outputFormat: OutputFormat, outputToFile: boolean) {
+  const processedData = extractElements(formDefinition.elements, '', outputFormat);
+
+  if (outputToFile) {
+    writeToFile(processedData,formDefinition, outputFormat);
+  } else {
+    console.log(JSON.stringify(processedData, null, 2));
+  }
+  
 }
 
-function getOutputFileName() {
-  const formattedName = toPascalCase(formDefinition.name);
-  const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
-  // const datetime = moment().format('YYYYMMDD-HHmm');
-  // return `${formattedName}-${datetime}.json`;
-  return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
-}
-
-function writeToFile(processedData: { [key: string]: any }) {
-  const filePath = path.join(__dirname, '..\\out', getOutputFileName());
-  fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
-  console.log(`File saved to ${filePath}`);
-}
-
-const processedData = extractElements(formDefinition.elements);
-
-if (outputToFile) {
-  writeToFile(processedData);
-} else {
-  console.log(JSON.stringify(processedData, null, 2));
-}

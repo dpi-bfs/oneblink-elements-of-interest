@@ -38,7 +38,7 @@ Given a OneBlink Form definition file return a file that shows each element of i
 
 * Copy response to file E.g. ./formDefinitions/RecordOfMovementDefinition.json
 
-* In this code goto config section:
+* In  .\src\index.ts goto config section:
   - Update import formDefinition
   - Set const outputToFile
   - Set outputFormat
@@ -49,5 +49,5 @@ Given a OneBlink Form definition file return a file that shows each element of i
     
     // or
     
-    npx tsx .\getOneBlinkElementsOfInterestFromDefinition.ts
+    npx tsx .\src\index.ts
 
