@@ -31,10 +31,7 @@ Given a OneBlink Form Id return a file that shows each element of interest.
 
 * Note the form id from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
 
-* In  .\src\index.ts goto config section:
-  - Set formId
-  - Set const outputToFile
-  - Set outputFormat
+* In  .\src\index.ts goto config section and set according the comments.
 
 * Execute 
     
