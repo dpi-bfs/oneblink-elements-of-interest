@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsx .\\getOneBlinkElementsOfInterestFromDefinition.ts"
+    "start": "npx tsx .\\src\\getOneBlinkElementsOfInterestFromDefinition.ts"
   },
   "author": "John Bentley",
   "license": "ISC",

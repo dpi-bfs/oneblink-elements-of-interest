@@ -1,5 +1,5 @@
 /**********  Config ****************************************************************/
-import formDefinition from './formDefinitions/RecordOfMovementDefinition.json';
+import formDefinition from '../formDefinitions/RecordOfMovementDefinition.json';
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
@@ -74,7 +74,7 @@ function getOutputFileName() {
 }
 
 function writeToFile(processedData: { [key: string]: any }) {
-  const filePath = path.join(__dirname, 'out', getOutputFileName());
+  const filePath = path.join(__dirname, '..\\out', getOutputFileName());
   fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
   console.log(`File saved to ${filePath}`);
 }
