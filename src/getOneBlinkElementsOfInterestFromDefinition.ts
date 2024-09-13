@@ -71,7 +71,13 @@ function extractElements(elements: any[], prefix = '', outputFormat: OutputForma
   return result;
 }
 
-export async function writeElementsOfInterestToJson(formId: number, outputFormat: OutputFormat, outputToFile: boolean) {
+export function writeElementsOfInterestToJsonFiles(formIds: number[], outputFormat: OutputFormat, outputToFile: boolean) {
+  for (const formId of formIds) {
+    writeElementsOfInterestToJson(formId, outputFormat, outputToFile);
+  }
+}
+
+async function writeElementsOfInterestToJson(formId: number, outputFormat: OutputFormat, outputToFile: boolean) {
 
   const formDefinition: OneBlinkTypes.FormTypes.Form  = await fetchFormDefinition(formId)
   const processedData = extractElements(formDefinition.elements, '', outputFormat);

@@ -1,9 +1,10 @@
 import {OutputFormat} from './projectTypes'
-import {writeElementsOfInterestToJson} from './getOneBlinkElementsOfInterestFromDefinition'
+import {writeElementsOfInterestToJsonFiles} from './getOneBlinkElementsOfInterestFromDefinition'
 
 /**********  Config ****************************************************************/
 
-const formId = 19049
+const formIds: number[] = [19049]
+// const formIds: number[] = [19049,  19289]
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
@@ -12,4 +13,4 @@ const outputToFile = true;
 const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
 /*************************************************************************************/
 
-writeElementsOfInterestToJson(formId, outputFormat,outputToFile)
+writeElementsOfInterestToJsonFiles(formIds, outputFormat,outputToFile)
