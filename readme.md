@@ -95,8 +95,8 @@ Another use case is when building (ironically) a paper based form that would fee
 
 * Update packages
   
-    npx npm-check-updates --upgrade
-    npm install
+      npx npm-check-updates --upgrade
+      npm install
 
 ### Execute it
 
