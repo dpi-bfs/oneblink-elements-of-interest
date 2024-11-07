@@ -35,13 +35,21 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 ## Why is this useful?
 
-The main use case is when designing a database to receive data from one or more (possible complex) oneblink forms. You want to know all the relevant fields to have in the database. 
+The following use cases
 
-One would normally do this by scanning the console. But the "elements of interest" live in a sea of irrelevant elements (headings, sections, info elements, "__" prefixed technical elements); spread across multiple tabs. Easier to have a single text file with type information to cross check against an existing or developing database schema.
+  1. The main use case is when designing a database to receive data from one or more (possible complex) oneblink forms. You want to know all the relevant fields to have in the database. 
 
-You might be tempted to look at submission output of a form for this work. But the problem with this is that elements are often conditionally shown. And so a particular submission might miss some elements because they where not shown.
+      One would normally do this by scanning the console. But the "elements of interest" live in a sea of irrelevant elements (headings, sections, info elements, "__" prefixed technical elements); spread across multiple tabs. Easier to have a single text file with type information to cross check against an existing or developing database schema.
 
-Another use case is when building (ironically) a paper based form that would feed a oneblink form. We do this in the Parthenium weed project in case our system is down. The paper form is a backup. In this case the paper form designer wants to know *all* the possible elements to show.
+      You might be tempted to look at submission output of a form for this work. But the problem with this is that elements are often conditionally shown. And so a particular submission might miss some elements because they where not shown.
+
+  2. Another use case is when building (ironically) a paper based form that would feed a oneblink form. We do this in the Parthenium weed project in case our system is down. The paper form is a backup. In this case the paper form designer wants to know *all* the possible elements to show.
+
+  3. When making changes to a project with an existing PROD database it is useful to compare the set of fields that are changed or added. We can achieve this by get a file of elements of interest for the OneBlink DEV V PROD forms. Then doing a text base comparison of the differences (e.g. Using Windiff or Visual Studio Codes built in text comparison commands). e.g. compare the following
+      - \out\FireAntCarriers-RecordOfMovementDeclaration-18736-ElementsOfInterest-AsKeyPair.json
+      - \out\FireAntCarriers-RecordOfMovementDeclaration-19723-ElementsOfInterest-AsKeyPair.json
+
+      ![formDefinitionComparisonAcrossEnvironments.png](docs\formDefinitionComparisonAcrossEnvironments.png)
 
 ## Technical notes
 
