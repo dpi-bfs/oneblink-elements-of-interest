@@ -43,7 +43,28 @@ You might be tempted to look at submission output of a form for this work. But t
 
 Another use case is when building (ironically) a paper based form that would feed a oneblink form. We do this in the Parthenium weed project in case our system is down. The paper form is a backup. In this case the paper form designer wants to know *all* the possible elements to show.
 
+## Technical notes
+
+* Loads into memory a OneBlink form definition file, given a form id.
+
+* Form ids are unique to each environments for the same form. E.g.
+  - 19227. TEST Parthenium Weed Carriers - Record of Movement https://forms-test.bfs.dpi.nsw.gov.au/forms/19227
+  - 19564. PROD Parthenium Weed Carriers - Record of Movement https://forms.bfs.dpi.nsw.gov.au/forms/19564
+
+* An example OneBlink form definition file is at flotsam\formDefinitions\RecordOfMovementDefinition.json
+
+* To view a OneBlink Form file definition via the browser:
+  - Load Form in Firefox Browser with Dev Console F12 open
+  - Network Tab > XHR filter
+  - Look for something like '19049?injectForms=true"' (The number is the form id)
+  - View or get response
+    + Click on that line > Right hand pane > Response Tab; or
+    + Right click on that line > Copy Value > Copy Response
+
+
 ## Usage
+
+### General Setup
 
 * Install node.js.
 
@@ -64,9 +85,20 @@ Another use case is when building (ironically) a paper based form that would fee
         }
       }
 
+### Form/Project Setup
+
 * Note the form ids from a url. E.g. 19049 in https://nswfoodauthority-dpi-forms-dev.cdn.oneblink.io/forms/19049
 
 * In  .\src\index.ts goto the config section and set according the comments.
+
+### Update the code
+
+* Update packages
+  
+    npx npm-check-updates --upgrade
+    npm install
+
+### Execute it
 
 * Execute ....
     
@@ -82,20 +114,3 @@ Another use case is when building (ironically) a paper based form that would fee
   + PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json
 
 
-## Technical notes
-
-* Loads into memory a OneBlink form definition file, given a form id.
-
-* Form ids are unique to each environments for the same form. E.g.
-  - 19227. TEST Parthenium Weed Carriers - Record of Movement https://forms-test.bfs.dpi.nsw.gov.au/forms/19227
-  - 19564. PROD Parthenium Weed Carriers - Record of Movement https://forms.bfs.dpi.nsw.gov.au/forms/19564
-
-* An example OneBlink form definition file is at flotsam\formDefinitions\RecordOfMovementDefinition.json
-
-* To view a OneBlink Form file definition via the browser:
-  - Load Form in Firefox Browser with Dev Console F12 open
-  - Network Tab > XHR filter
-  - Look for something like '19049?injectForms=true"' (The number is the form id)
-  - View or get response
-    + Click on that line > Right hand pane > Response Tab; or
-    + Right click on that line > Copy Value > Copy Response
