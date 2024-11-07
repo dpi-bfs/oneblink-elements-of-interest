@@ -35,7 +35,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 The following use cases
 
-  1. The main use case is when designing a database to receive data from one or more (possible complex) oneblink forms. You want to know all the relevant fields to have in the database. 
+  1. The main use case is when designing a database to receive data from one or more (possibly complex) oneblink forms. You want to know all the relevant fields to have in the database. 
 
       One would normally do this by scanning the console. But the "elements of interest" live in a sea of irrelevant elements (headings, sections, info elements, "__" prefixed technical elements); spread across multiple tabs. Easier to have a single text file with type information to cross check against an existing or developing database schema.
 
