@@ -16,7 +16,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 * Groups elements in their pages.
 
-* In ElementAsKeyPair format where
+* In `OutputFormat.AsKeyPair` where
   - key is the (technical) element name, and
   - the value is the type in brackets []; followed by the (user facing) element label. 
   - E.g. 
@@ -24,7 +24,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
   - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
 
-* In ElementWithChildObject format where the value is an object showing type and label separately. E.g.
+* In `OutputFormat.WithChildObject` where the value is an object showing type and label separately. E.g.
 
       "ExpectedInspectionDate": {
         "label": "Expected inspection date",
@@ -99,6 +99,8 @@ Another use case is when building (ironically) a paper based form that would fee
       npm install
 
 ### Execute it
+
+* Turn off checkpoint harmony. Otherwise you may get "SELF_SIGNED_CERT_IN_CHAIN" errors.
 
 * Execute ....
     

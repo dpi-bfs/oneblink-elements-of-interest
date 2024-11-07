@@ -15,15 +15,15 @@ function toPascalCase(input: string): string {
     .join('');                        // Join the words together
 }
 
-function getOutputFileName(formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat) {
+function getOutputFileName(formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat, formId: number) {
   const formattedName = toPascalCase(formDefinition.name);
   const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
   // const datetime = moment().format('YYYYMMDD-HHmm');
   // return `${formattedName}-${datetime}.json`;
-  return `${formattedName}-ElementsOfInterest-${formatSuffix}.json`;
+  return `${formattedName}-${formId}-ElementsOfInterest-${formatSuffix}.json`;
 }
 
-function writeToFile(processedData: { [key: string]: any }, formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat): void {
+function writeToFile(processedData: { [key: string]: any }, formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat, formId: number): void {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
 
@@ -34,7 +34,7 @@ function writeToFile(processedData: { [key: string]: any }, formDefinition: OneB
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const filePath = path.join(outputDir, getOutputFileName(formDefinition, outputFormat));
+  const filePath = path.join(outputDir, getOutputFileName(formDefinition, outputFormat, formId));
   fs.writeFileSync(filePath, JSON.stringify(processedData, null, 2), 'utf8');
   console.log(`File saved to ${filePath}`);
 }
@@ -91,7 +91,7 @@ async function writeElementsOfInterestToJson(formId: number, outputFormat: Outpu
   const processedData = extractElements(formDefinition.elements, '', outputFormat);
 
   if (outputToFile) {
-    writeToFile(processedData,formDefinition, outputFormat);
+    writeToFile(processedData,formDefinition, outputFormat, formId);
   } else {
     console.log(JSON.stringify(processedData, null, 2));
   }

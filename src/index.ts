@@ -3,24 +3,30 @@ import {writeElementsOfInterestToJsonFiles} from './getOneBlinkElementsOfInteres
 
 /**********  Config *****************************************************/ 
 
-// Add a DEV formID if not yet existing
+// Add a formID if not yet existing
 enum FormIdEnum {
-  PartheniumWeedCarriersRecordOfMovement = 19049,
-  PartheniumWeedCarriersInspection = 19289,
-  PartheniumWeedCarriersBiosecurityCertificatePaymentAfterBorderCrossing = 23357,
-  PartheniumWeedCarriersNswDestinationsNotification = 23378
+  PartheniumWeedCarriersRecordOfMovementDev = 19049,
+  PartheniumWeedCarriersInspectionDev = 19289,
+  PartheniumWeedCarriersBiosecurityCertificatePaymentAfterBorderCrossingDev  = 23357,
+  PartheniumWeedCarriersNswDestinationsNotificationDev  = 23378,
+  FireAntCarriersRecordOfMovementDev = 18736,
+  FireAntCarriersRecordOfMovementProd = 19723,
 } 
 
 // Set one or more FormIdEnums
 // const formIds: number[] = [
-//   FormIdEnum.PartheniumWeedCarriersRecordOfMovement,  
-//   FormIdEnum.PartheniumWeedCarriersInspection,
-//   FormIdEnum.PartheniumWeedCarriersBiosecurityCertificatePaymentAfterBorderCrossing,
-//   FormIdEnum.PartheniumWeedCarriersNswDestinationsNotification
+//   FormIdEnum.PartheniumWeedCarriersRecordOfMovementDev ,  
+//   FormIdEnum.PartheniumWeedCarriersInspectionDev ,
+//   FormIdEnum.PartheniumWeedCarriersBiosecurityCertificatePaymentAfterBorderCrossingDev ,
+//   FormIdEnum.PartheniumWeedCarriersNswDestinationsNotificationDev 
+// ]
+// const formIds: number[] = [
+//   FormIdEnum.PartheniumWeedCarriersInspectionDev ,
+//   FormIdEnum.PartheniumWeedCarriersNswDestinationsNotificationDev 
 // ]
 const formIds: number[] = [
-  FormIdEnum.PartheniumWeedCarriersInspection,
-  FormIdEnum.PartheniumWeedCarriersNswDestinationsNotification
+  FormIdEnum.FireAntCarriersRecordOfMovementDev ,
+  FormIdEnum.FireAntCarriersRecordOfMovementProd 
 ]
 
 // Set to `true` to write to file, `false` to log to console
