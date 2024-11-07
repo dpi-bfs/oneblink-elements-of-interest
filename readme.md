@@ -16,13 +16,11 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 * Groups elements in their pages.
 
-* In `OutputFormat.AsKeyPair` where
-  - key is the (technical) element name, and
-  - the value is the type in brackets []; followed by the (user facing) element label. 
-  - E.g. 
-    "ExpectedInspectionDate": "[date] Expected inspection date",
-  - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
-
+* In (recommended) `OutputFormat.AsKeyPair` where: the key is the (technical) element name, and the value is the type in brackets []; followed by the (user facing) element label. E.g. 
+    
+      "ExpectedInspectionDate": "[date] Expected inspection date",
+  
+    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
 * In `OutputFormat.WithChildObject` where the value is an object showing type and label separately. E.g.
 
