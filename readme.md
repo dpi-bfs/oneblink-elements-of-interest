@@ -22,7 +22,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
   
     - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
-* In `OutputFormat.AsKeyPairWithElementID`, as above but with the Element ID. Useful when building power automate flows and needing to exclude elements with the OneBlink action 'Generate Form Submission PDF;.
+* In `OutputFormat.AsKeyPairWithElementID`, as above but with the Element ID. Useful when building power automate flows and needing to exclude elements with the OneBlink action 'Generate Form Submission PDF'.
 
       "ApplicantFirstName": "[text] Applicant first name | 41c64cf3-393a-45a3-9841-8deae9c55749",   
 
