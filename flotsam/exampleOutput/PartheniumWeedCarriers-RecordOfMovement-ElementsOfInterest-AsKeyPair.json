@@ -1,0 +1,69 @@
+{
+  "Introduction": {
+    "trackingCode": "[text] Digital reference code",
+    "env": "[select] env"
+  },
+  "Person responsible": {
+    "IsInspectorFillingRom": "[radio] Are you a biosecurity certifier filling this record of movement form out on behalf of the person responsible?",
+    "BiosecurityCertifierCode": "[text] Biosecurity certifier code",
+    "InspectorFillingRom": "[text] Biosecurity certifier filling record of movement",
+    "PersonResponsibleFirstName": "[text] First name",
+    "PersonResponsibleLastName": "[text] Last name",
+    "PersonResponsibleEmail": "[email] Email",
+    "PersonResponsibleCanAccessEmailOnTheRoad": "[radio] Can you readily access your email from a mobile device, while on the road?",
+    "PersonResponsibleMobilePhone": "[telephone] Mobile phone",
+    "PersonResponsibleAlternatePhone": "[telephone] Alternate phone"
+  },
+  "Movement details": {
+    "InspectionFacilityIntended": "[radio] Inspection facility intended",
+    "ExpectedInspectionDate": "[date] Expected inspection date",
+    "Owner": "[select] Owner",
+    "OwnerFirstName": "[text] First name",
+    "OwnerLastName": "[text] Last name",
+    "OwnerEmail": "[email] Email",
+    "OwnerPhone": "[telephone] Phone",
+    "Carriers[]": {
+      "Carriers[].CarrierType": "[radio] Carrier type",
+      "Carriers[].CarrierMake": "[text] Make",
+      "Carriers[].CarrierModel": "[text] Model",
+      "Carriers[].CarrierSerialNumber": "[text] Serial number",
+      "Carriers[].CarrierRegistrationNumber": "[text] Registration number"
+    }
+  },
+  "Origin of carriers": {
+    "OriginAddressNswPoint": "[pointAddress] Address",
+    "OriginCannotFindAddressBySearch": "[boolean] I cannot find my address by search",
+    "OriginManualStreetAddress": "[textarea] Street address",
+    "OriginManualSuburb": "[text] Suburb",
+    "OriginManualState": "[select] State",
+    "OriginManualPostcode": "[number] Postcode"
+  },
+  "Destinations of carriers": {
+    "AreDestinationsKnown": "[radio] Do you know the destinations in NSW where the carriers will next work?",
+    "Destinations[]": {
+      "Destinations[].DestinationAddressNswPoint": "[pointAddress] Address",
+      "Destinations[].DestinationCannotFindAddressBySearch": "[boolean] I cannot find my address by search",
+      "Destinations[].DestinationManualStreetAddress": "[textarea] Street address",
+      "Destinations[].DestinationManualSuburb": "[text] Suburb",
+      "Destinations[].DestinationManualState": "[select] State",
+      "Destinations[].DestinationManualPostcode": "[number] Postcode",
+      "Destinations[].ExpectedDestinationArrivalDate": "[date] Expected destination arrival date"
+    }
+  },
+  "Additional information": {
+    "RomUserNotes": "[textarea] Notes"
+  },
+  "Declaration": {
+    "IDeclareThat": "[checkboxes] I declare that"
+  },
+  "Payment preparation": {
+    "PaymentRoute": "[radio] Payment route",
+    "PaymentRouteReason": "[select] Payment route reason",
+    "PaymentRouteReasonOther": "[text] Payment route reason - other",
+    "TaxInvoiceTo": "[radio] Tax invoice to",
+    "PersonResponsibleAbn": "[abn] Person responsible ABN",
+    "OwnerAbn": "[abn] Owner ABN",
+    "BiosecurityCertificateFee": "[number] BiosecurityCertificateFee",
+    "CustomerReferenceNumber": "[text] CustomerReferenceNumber"
+  }
+}
