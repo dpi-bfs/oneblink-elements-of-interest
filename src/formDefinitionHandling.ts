@@ -17,15 +17,3 @@ export async function fetchFormDefinition(formID: number) {
     throw error;
   }
 }
-
-// async function main() {
-//   try {
-//     const formDefinition: OneBlinkTypes.FormTypes.Form  = await fetchFormDefinition(22969);
-//     console.log('Form Definition:', JSON.stringify(formDefinition, null, 2));
-
-//   } catch (error) {
-//     console.error('Failed to get form definition:', error);
-//   }
-// }
-
-// main()

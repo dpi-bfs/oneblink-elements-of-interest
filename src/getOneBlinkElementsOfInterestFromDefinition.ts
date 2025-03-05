@@ -17,7 +17,7 @@ function toPascalCase(input: string): string {
 
 function getOutputFileName(formDefinition: OneBlinkTypes.FormTypes.Form, outputFormat: OutputFormat, formId: number) {
   const formattedName = toPascalCase(formDefinition.name);
-  const formatSuffix = outputFormat === OutputFormat.AsKeyPair ? 'AsKeyPair' : 'WithChildObject';
+  let formatSuffix = OutputFormat[outputFormat]; 
   // const datetime = moment().format('YYYYMMDD-HHmm');
   // return `${formattedName}-${datetime}.json`;
   return `${formattedName}-${formId}-ElementsOfInterest-${formatSuffix}.json`;
@@ -55,6 +55,8 @@ function extractElements(elements: any[], prefix = '', outputFormat: OutputForma
         result[key] = extractElements(element.elements, `${key}.`, outputFormat);
       } else if (outputFormat === OutputFormat.AsKeyPair) {
         result[key] = `[${element.type}] ${element.label}`;
+      } else if (outputFormat === OutputFormat.AsKeyPairWithElementID) {
+        result[key] = `[${element.type}] ${element.label} | ${element.id}`;
       } else if (outputFormat === OutputFormat.WithChildObject) {
         result[key] = {
           label: element.label,

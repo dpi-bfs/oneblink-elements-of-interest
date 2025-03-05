@@ -1,0 +1,84 @@
+{
+  "Introduction": {
+    "trackingCode": "[text] Declaration reference code",
+    "env": "[select] env"
+  },
+  "Declarant": {
+    "DeclarantFirstName": "[text] First name",
+    "DeclarantLastName": "[text] Last name",
+    "DeclarantPhoneNumber": "[telephone] Phone number",
+    "DeclarantHasAbn": "[radio] Do you have an Australia Business Number (ABN)?",
+    "DeclarantAbn": "[abn] ABN",
+    "DeclarantBusinessName": "[text] Business name"
+  },
+  "Movement details": {
+    "CarrierType": "[radio] Carrier type",
+    "CarrierUnit": "[select] Carrier unit",
+    "ItemsPluralName": "[text] Items plural name",
+    "CarrierQuantity": "[number] Carrier quantity",
+    "EntryIntoNswDate": "[date] Entry into NSW date"
+  },
+  "Origin": {
+    "MapOfInfestations": "[arcGISWebMap] Map of infestations",
+    "OriginArea": "[radio] Origin area",
+    "IsOriginPremisesFireAntNestRegularlyChecked": "[radio] Are the origin premises checked for fire ant nests every 12 weeks? ",
+    "OriginFireAntsDetected": "[radio] Have fire ants been detected at this location in the past 12 months?",
+    "IsOriginUnderIgrTreatmentRegime": "[radio] Is the property under an IGR treatment regime?",
+    "OriginAddressLookedUp": "[pointAddress] Address",
+    "OriginCannotFindAddressBySearch": "[boolean] I cannot find the address by searching",
+    "OriginAddressManual_StreetAddress": "[textarea] Street address",
+    "OriginAddressManual_Suburb": "[text] Suburb",
+    "OriginAddressManual_State": "[select] State",
+    "OriginAddressManual_Postcode": "[text] Postcode",
+    "OriginAddressManual_Location": "[location] Location",
+    "ContactOrigin": "[select] Person",
+    "ContactOriginNewFirstName": "[text] First name",
+    "ContactOriginNewLastName": "[text] Last name",
+    "ContactOriginNewPhoneNumber": "[telephone] Phone number",
+    "ContactOriginNewEmail": "[email] Email"
+  },
+  "Certification": {
+    "BiosecurityCertificateEvidenceMethod": "[radio] How would you like to provide evidence of your biosecurity certificate?",
+    "BiosecurityCertificatePhoto": "[camera] Take a photo of your certification",
+    "BiosecurityCertificateFiles": "[files] Upload a digital copy of your certification",
+    "BiosecurityCertificateProvided": "[radio] Biosecurity certificate type provided"
+  },
+  "Destinations": {
+    "IsUnloadingCarrierNsw": "[radio] Will you be unloading carrier in NSW?",
+    "Destinations[]": {
+      "Destinations[].DestinationAddressLookedUp": "[pointAddress] Destination address",
+      "Destinations[].DestinationCannotFindAddressBySearch": "[boolean] I cannot find the address by searching",
+      "Destinations[].DestinationAddressManual_StreetAddress": "[textarea] Street address",
+      "Destinations[].DestinationAddressManual_Suburb": "[text] Suburb",
+      "Destinations[].DestinationAddressManual_State": "[select] State",
+      "Destinations[].DestinationAddressManual_Postcode": "[text] Postcode",
+      "Destinations[].DestinationAddressManual_Location": "[location] Location",
+      "Destinations[].DestinationBusinessName": "[text] Destination business name",
+      "Destinations[].IsDestinationCommercialRetailerWholesalerOrDistributor": "[radio] Is this destination a commercial retailer, wholesaler or distributor of this carrier?",
+      "Destinations[].IsDestinationNewResidentialCommercialOrPublicDevelopmentSite": "[radio] Is this destination a new residential, commercial or public development site?",
+      "Destinations[].ContactDestination": "[select] Person",
+      "Destinations[].ContactDestinationNewFirstName": "[text] First name",
+      "Destinations[].ContactDestinationNewLastName": "[text] Last name",
+      "Destinations[].ContactDestinationNewPhoneNumber": "[telephone] Phone number",
+      "Destinations[].ContactDestinationNewEmail": "[email] Email"
+    }
+  },
+  "Transport": {
+    "TransportMethod": "[radio] Transport method",
+    "TransportBusinessName": "[text] Transport business name",
+    "TrainID": "[text] Train identification",
+    "Vehicles[]": {
+      "Vehicles[].VehicleRego": "[text] Vehicle registration",
+      "Vehicles[].Trailer[]": {
+        "Vehicles[].Trailer[].TrailerRego": "[text] Trailer registration"
+      }
+    }
+  },
+  "Additional information": {
+    "Notes": "[textarea] Notes"
+  },
+  "Declaration": {
+    "IDeclareThat": "[checkboxes] I declare that:",
+    "DeclarantEmail": "[email] Declarant email"
+  }
+}

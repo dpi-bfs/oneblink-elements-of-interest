@@ -11,6 +11,9 @@ enum FormIdEnum {
   PartheniumWeedCarriersNswDestinationsNotificationDev  = 23378,
   FireAntCarriersRecordOfMovementDev = 18736,
   FireAntCarriersRecordOfMovementProd = 19723,
+  CtoSubmitATreatmentRecord = 23676,
+  CtoSubmitAnExaminationRecord = 24022,
+  DesignSpiker02Dev = 20913
 } 
 
 // Set one or more FormIdEnums
@@ -24,16 +27,19 @@ enum FormIdEnum {
 //   FormIdEnum.PartheniumWeedCarriersInspectionDev ,
 //   FormIdEnum.PartheniumWeedCarriersNswDestinationsNotificationDev 
 // ]
+// const formIds: number[] = [
+//   FormIdEnum.FireAntCarriersRecordOfMovementDev ,
+//   FormIdEnum.FireAntCarriersRecordOfMovementProd 
+// ]
 const formIds: number[] = [
-  FormIdEnum.FireAntCarriersRecordOfMovementDev ,
-  FormIdEnum.FireAntCarriersRecordOfMovementProd 
+  FormIdEnum.DesignSpiker02Dev
 ]
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
 
 // Set the desired output format here
-const outputFormat: OutputFormat = OutputFormat.AsKeyPair;
+const outputFormat: OutputFormat = OutputFormat.AsKeyPairWithElementID;
 /*************************************************************************/
 
 writeElementsOfInterestToJsonFiles(formIds, outputFormat, outputToFile)
