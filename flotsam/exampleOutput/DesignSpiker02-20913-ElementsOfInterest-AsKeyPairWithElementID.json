@@ -1,0 +1,33 @@
+{
+  "env": "[select] env | 5c141da8-edaa-4c92-9378-fadbf1bf24b4",
+  "Moons": "[autocomplete] Moon | 2be02020-57ce-486a-8bdc-a7e4f3c11ad7",
+  "Hotline_call": "[boolean] Hotline calll | 68ba9409-96fc-4f70-b9ec-7432c0b465f5",
+  "ElementWithNoHint": "[text] Element with no hint | 729cc354-6f53-4486-9cee-36f8f0f11664",
+  "CoolCountry": "[text] Cool country | cc44c996-7f9e-47db-847d-55310be9f21a",
+  "TreatmentDateTime": "[datetime] TreatmentDateTime | 7d80bb8a-d3e2-4332-a71b-e661091530c6",
+  "MovementDateTime": "[datetime] MovementDateTime | 1ae33feb-4a74-4e69-ae9c-87ca1ed3c371",
+  "MyCalc": "[calculation] MyCalc | 32b62a9d-b8c3-4742-b6a5-7a5d1e14ec14",
+  "EnvironmentSpecificMessage": "[form] undefined | d2c76f07-c26c-465d-a0da-c5695eec4051",
+  "LovePets": "[boolean] Love pets? | 5da80708-818c-4f9a-bd4c-40c999ff9a35",
+  "MyPet": "[text] MyPetRequired | 8d7d303c-5036-492d-8794-ce5eeed06474",
+  "MyPetNotRequired": "[text] MyPetNotRequired | 49222c25-5f4d-4461-b125-7bb5b5ff7b0d",
+  "MyLocationElement": "[location] My Location Element | 518df6a9-2cbb-454f-a4db-8fe534085bee",
+  "ApplicantFirstName": "[text] Applicant first name | 41c64cf3-393a-45a3-9841-8deae9c55749",
+  "ApplicantLastName": "[text] Applicant last name | 1b9fcffc-7da5-4d88-8a48-f3aef610d32f",
+  "Convicts[]": {
+    "Convicts[].ConvictFirstName": "[text] First name | 6e01503d-3493-435d-9a72-1572c17d9c83",
+    "Convicts[].ConvictLastName": "[text] Last name | 3e2ff252-b187-4585-9a9f-cdb3ee2b75f2"
+  },
+  "Drivers[]": {
+    "Drivers[].Driver_person": "[select] Driver person | e0b104d2-972a-40a8-8ecc-f10bbeffbc6f",
+    "Drivers[].DriverFirstName": "[text] First name | 34670949-a630-4a4f-a63e-1984623f6abe",
+    "Drivers[].DriverLastName": "[text] Last name | cfb8f816-6ebe-4ba1-b42b-d15304111ebd"
+  },
+  "Person": "[select] Person | 70e88143-2744-48f5-8ba4-2d2b8057bfb6",
+  "AnotherPersonFirstName": "[text] Another person first name | d39ace57-135f-4c17-a344-60034496e295",
+  "AnotherPersonLastName": "[text] Another person last name | 5b40b42e-21ef-459e-93d6-94ab7a47ca8d",
+  "ContactEmail": "[email] Email to use | 2a57412d-f76f-40c4-bfd2-6a5781d962d7",
+  "QualifiedToSubmit": "[radio] Are you qualified to submit this form? | 3d5fa975-55b1-47bd-b6ab-a5aadf452dc0",
+  "MyMultiSelect": "[checkboxes] My Multi Select | ed27daca-9984-47e6-96fc-54264ae0f982",
+  "MyElementExcludedFromPDF": "[text] My Element Excluded From PDF | e117ed97-4015-4fd8-9707-ba51b8e23c84"
+}
