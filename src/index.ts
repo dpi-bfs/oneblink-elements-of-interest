@@ -32,13 +32,12 @@ enum FormIdEnum {
 //   FormIdEnum.FireAntCarriersRecordOfMovementProd 
 // ]
 const formIds: number[] = [
-  FormIdEnum.DesignSpiker02Dev
+  FormIdEnum.PartheniumWeedCarriersRecordOfMovementDev
 ]
 
 // Set to `true` to write to file, `false` to log to console
 const outputToFile = true;
 
-// Set the desired output format here
 const outputFormat: OutputFormat = OutputFormat.AsKeyPairWithElementID;
 /*************************************************************************/
 

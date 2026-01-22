@@ -1,9 +1,9 @@
 
- # OneBlink Elements of Interest
- 
- ## Description
+# OneBlink Elements of Interest
 
-Given a set of OneBlink Form Ids write to json files that shows each element of interest, per form. 
+## Description
+
+Given a set of OneBlink Form Ids write to json files that shows each element of interest, per form.
 
 * Saves a simple json "element of interest" file for each form.
 
@@ -16,17 +16,17 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
 * Groups elements in their pages.
 
-* In (recommended) `OutputFormat.AsKeyPair` where: the key is the (technical) element name, and the value is the type in brackets []; followed by the (user facing) element label. E.g. 
-    
+* In (recommended) `OutputFormat.AsKeyPair` where: the key is the (technical) element name, and the value is the type in brackets []; followed by the (user facing) element label. E.g.
+
       "ExpectedInspectionDate": "[date] Expected inspection date",
-  
-    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
+
+      - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
 * In `OutputFormat.AsKeyPairWithElementID`, as above but with the Element ID. Useful when building power automate flows and needing to exclude elements with the OneBlink action 'Generate Form Submission PDF'.
 
-      "ApplicantFirstName": "[text] Applicant first name | 41c64cf3-393a-45a3-9841-8deae9c55749",   
+      "ApplicantFirstName": "[text] Applicant first name | 41c64cf3-393a-45a3-9841-8deae9c55749",
 
-    - Example file: <a href="./flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json">flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json</a>       
+      - Example file: <a href="./flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json">flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json</a>
 
 * In `OutputFormat.WithChildObject` where the value is an object showing type and label separately. E.g.
 
@@ -35,14 +35,14 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
         "type": "date"
       }
 
-    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json">/flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json</a>
+      - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json">/flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json</a>
 
 
 ## Why is this useful?
 
 The following use cases
 
-  1. The main use case is when designing a database to receive data from one or more (possibly complex) oneblink forms. You want to know all the relevant fields to have in the database. 
+  1. The main use case is when designing a database to receive data from one or more (possibly complex) oneblink forms. You want to know all the relevant fields to have in the database.
 
       One would normally do this by scanning the console. But the "elements of interest" live in a sea of irrelevant elements (headings, sections, info elements, "__" prefixed technical elements); spread across multiple tabs. Easier to have a single text file with type information to cross check against an existing or developing database schema.
 
@@ -107,7 +107,7 @@ The following use cases
 ### Update the code
 
 * Update packages
-  
+
       npx npm-check-updates --upgrade
       npm install
 
@@ -116,11 +116,11 @@ The following use cases
 * Turn off checkpoint harmony. Otherwise you may get "SELF_SIGNED_CERT_IN_CHAIN" errors.
 
 * Execute ....
-    
+
       npm start
-      
+
       // or
-      
+
       npx tsx .\src\index.ts
 
 * Observe in folder \out\ the desired files. E.g.
