@@ -20,13 +20,13 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
 
       "ExpectedInspectionDate": "[date] Expected inspection date",
 
-      - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
+    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json">flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-AsKeyPair.json</a>
 
 * In `OutputFormat.AsKeyPairWithElementID`, as above but with the Element ID. Useful when building power automate flows and needing to exclude elements with the OneBlink action 'Generate Form Submission PDF'.
 
       "ApplicantFirstName": "[text] Applicant first name | 41c64cf3-393a-45a3-9841-8deae9c55749",
 
-      - Example file: <a href="./flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json">flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json</a>
+    - Example file: <a href="./flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json">flotsam/exampleOutput/DesignSpiker02-20913-ElementsOfInterest-AsKeyPairWithElementID.json</a>
 
 * In `OutputFormat.WithChildObject` where the value is an object showing type and label separately. E.g.
 
@@ -35,7 +35,7 @@ Given a set of OneBlink Form Ids write to json files that shows each element of 
         "type": "date"
       }
 
-      - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json">/flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json</a>
+    - Example file: <a href="./flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json">/flotsam/exampleOutput/PartheniumWeedCarriers-RecordOfMovement-ElementsOfInterest-WithChildObject.json</a>
 
 
 ## Why is this useful?
